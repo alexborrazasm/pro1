@@ -3,8 +3,26 @@ rectangular. Plantee e implemente un programa en Lenguaje C que indique el núme
 con ésas baldosas, sin romperlas. */
 
 #include<stdio.h>
+#include<math.h>
 
-main() {
+/*
+ El problema es que no se pueden romper baldosas. Esto exige calcular el número de baldosas del lado del cuadrado máximo que se puede recubrir, y que no es 
+ otro que la raíz cuadrada del cociente de la carga del camión por el peso de una baldosas, esto es, la raíz cuadrada del número de baldosas. Ese número no 
+ va a ser entero en general; si lo fuera, se podría construir un cuadrado de dimensiones máximas para la carga. Sólo falta calcular la parte entera del 
+ cociente, y ése será el tamaño del cuadrado que se puede recubrir sin romper baldosas. */ 
+
+int main() {
+    float b, t;
+    int lado;
+
+    printf("Escriba el nº de kilogramos que transporta el camión: ");
+    scanf("%f", &t);
+    printf("Escriba el peso de una baldosa en kilogramos: ");
+    scanf("%f", &b);
+
+    lado = (int)sqrt(t/b);
     
+    printf("El lado del cuadrado es %d.\n\n", lado);
+
     return 0;
 }
