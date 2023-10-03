@@ -34,13 +34,13 @@ int main() {
     salidaComida = (comida/salario) * 100;
     salidaTransporte = (transporte/salario) * 100;
     salidaOtros = (otros/salario) * 100;
-    totalGasto = ocio + comida + transporte;
+    totalGasto = ocio + comida + transporte + otros;
 
     // salida
     printf("************************************************************************\n");
-    printf("*******                   %s %s %s: %.0f                 *******\n", nombre, apellido1, apellido2, salario);
-    printf("            %Ocio         %Comida           %Transporte           %Otros\n");
-    printf("\t%.1f\t%.1f\t%.1f\t%.1f\n", salidaOcio, salidaComida, salidaTransporte, salidaOtros);
+    printf("*******\t%s %s %s: %.0f\t*******\n", nombre, apellido1, apellido2, salario);
+    printf("            %%Ocio         %%Comida           %%Transporte           %%Otros\n");
+    printf("%17.1f%16.1f%22.1f%17.1f\n", salidaOcio, salidaComida, salidaTransporte, salidaOtros);
     printf("*******                                                          *******\n");
     printf("                                                          Gasto  semanal\n");
     printf("                                                                    %.0f€\n", totalGasto);
