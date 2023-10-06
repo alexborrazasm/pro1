@@ -59,4 +59,4 @@ int main() {
     printf("                                                   Coste Total Matrícula\n");
     printf("%71.2f€\n", totalPrecio);
     printf("************************************************************************\n");
-}
+}3

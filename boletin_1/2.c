@@ -21,8 +21,8 @@ int main() {
 
     // salida de datos
     if (edad >= EDADJ)
-        printf("Sr/Sra. %s %s, le faltan aún 0 años para jubilarse", apellido1, apellido2);
+        printf("Sr/Sra. %s %s, le faltan aún 0 años para jubilarse\n", apellido1, apellido2);
     else 
-        printf("Sr/Sra. %s %s, le faltan aún %d años para jubilarse", apellido1, apellido2, EDADJ - edad); 
+        printf("Sr/Sra. %s %s, le faltan aún %d años para jubilarse\n", apellido1, apellido2, EDADJ - edad); 
     return 0;
 }
