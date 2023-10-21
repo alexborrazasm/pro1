@@ -1,5 +1,5 @@
-/* Implemente un programa que resuelva ecuaciones de segundo grado empleando sentencias switch para los casos: reales y distintas, complejas conjugadas y raíz 
-real doble. */
+/* Plantee e implemente un programa en Lenguaje C cuyo objetivo sea calcular las raíces de una ecuación de 2º grado, ax2+bx+c. El programa 
+debe solicitar por teclado los coeficientes a, b, c. y mostrar por pantalla las soluciones x1 y x2. */
 
 #include<stdio.h>
 #include<math.h>
@@ -23,7 +23,6 @@ int main() {
             // Raíces reales y distintas
             x1 = (-b + sqrt(dentroRaiz)) / (2 * a);
             x2 = (-b - sqrt(dentroRaiz)) / (2 * a);
-            printf("Las raíces son reales y distintas: x1 = %.2f y x2 = %.2f\n", x1, x2);
             break;
 
         case 0:
@@ -32,17 +31,16 @@ int main() {
                     // Raíces complejas conjugadas
                     x1 = -b / (2 * a);                       // Parte real
                     x2 = sqrt(-dentroRaiz) / (2 * a);        // Parte imaginaria
-                    printf("Las raíces son complejas conjugadas: x1 = %.2f + %.2fi y x2 = %.2f - %.2fi\n", x1, x2, x1, x2);
                     break;
 
                 case 0:
                     // Raíz real doble
                     x1 = -b / (2 * a);
-                    printf("La raíz es real y doble: x1 = x2 = %.2f\n", x1);
                     break;
             }
             break;
     }
+    printf("x1 = %.2f y x2 = %.2f\n", x1, x2);
 
     return 0;
 }
