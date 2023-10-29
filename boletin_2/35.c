@@ -6,14 +6,19 @@ contabilizados del modo indicado. */
 
 int main() {
     char e;
-    int c;
+    int error = 0;
 
     while(1) {
         e = getchar();
-        if (getchar() == '\n')
+        if (e == '\n')
             break;
-        else if (e !=  )
+        else if (!(e >= 48 && e <= 57 || e >= 65 && e <= 90 || e >= 97 && e <= 122 ))
+            error++;
     }
+
+    printf("Error: %d\n", error);
 
     return 0;
 }
+
+/* En ASCII los números son el intervalo 48 a 57, las letras mayúsculas 65 a 90 y las letras minúsculas  97 a 122 */
