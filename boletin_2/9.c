@@ -32,7 +32,7 @@ int main() {
     // Mostrar la fecha en formato dd mm yyyy
     printf("Hoy es: %02d/%02d/%02d\n", diaActual, mesActual, añoActual);
 
-5    switch (mes < mesActual) {
+    switch (mes < mesActual) {
     case 0:
         printf("Tienes %d días\n", diaActual - dia);
         break;
