@@ -6,10 +6,14 @@ void pedirMes(const char *string, char *scan) {
     scanf("%s", scan);
 }
 
-int esBisiesto(int n) {
-    if ((n % 4) == 0)
-        return 1;
-    return 0;
+int esBisiesto(int a) {
+    // Un año es bisiesto si es divisible por 4
+    // pero no es divisible por 100, a menos que también sea divisible por 400.
+    if ((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0)) {
+        return 1; // El año es bisiesto
+    } else {
+        return 0; // El año no es bisiesto
+    }
 }
 
 int main() {

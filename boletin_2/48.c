@@ -19,7 +19,7 @@ int main() {
     printf("Elementos del triángulo de Floyd hasta %d:\n", n);
     for (int i = 1; contador <= n; i++) {
         for (int j = 1; j <= i && contador <= n; j++) {
-            printf("%d ", contador);
+            printf("%3d ", contador);
             contador++;
         }
         printf("\n");

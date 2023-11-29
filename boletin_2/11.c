@@ -11,9 +11,9 @@ int main() {
     scanf("%f %f %f", &a, &b, &c);
 
     // Comprobación de entrada de datos
-    if (a == 0) {
+    if (a == 0.0) {
         printf("ERROR, división por 0, vuelve a introducir a: ");
-        scanf("%d", &a);
+        scanf("%f", &a);
     }
 
     dentroRaiz = b * b - 4 * a * c;
