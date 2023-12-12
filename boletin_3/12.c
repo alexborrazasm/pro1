@@ -11,14 +11,12 @@ int pedirN(const char *string) {
 }
 
 int sumar(int n) {
-    if (n<0) {
-        return 0;
-    } else if (n == 1) {
-        return 1;
-    } else {
-        return n + sumar(n - 1);
+    int acc=0;
+    for (int i = 0; i <= n; i++) {
+        acc += i;
     }
-    // Calcula 1+2+3+...+N recursivamente
+    return acc;
+    // Calcula 1+2+3+...+N
 }
 
 void test() {
