@@ -6,6 +6,18 @@ por pantalla (formato matricial) y muestre el elemento mayor y el elemento menor
 
 #define TAM 20
 
+int pedirN(const char *mensaje, int limInf, int limSup) {
+    int n;
+    printf("%s: ", mensaje);
+    scanf("%d", &n);
+    if (n > limInf && n < limSup ) {
+        return n;
+    } else {
+        printf("ERROR, fuera de rango.\n");
+        return pedirN(mensaje, limInf, limSup);
+    }
+}
+
 void rellenarMatriz(int matriz[][TAM], int filas, int columnas) {
     int j, num;
 
@@ -73,10 +85,8 @@ int main() {
     int matriz[TAM][TAM];
     int filas, columnas;
     
-    printf("Dime el número de filas: ");
-    scanf("%d", &filas);
-    printf("Dime el número de columnas: ");
-    scanf("%d", &columnas);
+    filas = pedirN("Dime el número de filas (máximo 20)", 0, TAM+1);
+    columnas = pedirN("Dime el número de columnas (máximo 20)", 0, TAM+1);
 
     rellenarMatriz(matriz, filas, columnas);
     imprimirMatriz(matriz, filas, columnas);
