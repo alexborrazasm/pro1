@@ -79,8 +79,6 @@ bool siNo(const char *mensaje) {
     }
 }
 
-
-
 int main() {
     int matriz[TAM][TAM];
     int matrizInv[TAM][TAM];
