@@ -1,4 +1,4 @@
-/*  Plantee e implemente un programa en lenguaje C que permita almacenar en memoria el nombre y las notas de una asignatura de una clase de 15 alumnos. Muestre 
+/* Plantee e implemente un programa en lenguaje C que permita almacenar en memoria el nombre y las notas de una asignatura de una clase de 15 alumnos. Muestre 
 por pantalla el nombre y nota de los alumnos que han obtenido la peor y la mejor calificación. Además muestre a continuación el listado con el nombre y nota de 
 todos los alumnos. */
 #include<stdio.h>
