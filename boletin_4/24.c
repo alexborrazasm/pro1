@@ -1,74 +1,86 @@
-/*  Diseñe la estructura para almacenar en memoria la información de los trabajadores de un taller de 20 empleados. Si el empleado
-es oficinista tendrá un número de teléfono; si es conductor tendrá asignado el número de matrícula de un vehículo; y si es técnico
-tendrá asignado el código de barras de un ordenador. Se debe conocer el nombre, la fecha de nacimiento, tipo de puesto de trabajo
-y el nivel de estudios de todos los trabajadores.  */
+/*  Diseñe la estructura para almacenar en memoria la información de los trabajadores de un taller de 20 empleados. Si el empleado es oficinista tendrá un número 
+de teléfono; si es conductor tendrá asignado el número de matrícula de un vehículo; y si es técnico tendrá asignado el código de barras de un ordenador. Se debe 
+conocer el nombre, la fecha de nacimiento, tipo de puesto de trabajo y el nivel de estudios de todos los trabajadores.  */
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-struct empleado {
-    int tipoPuesto;
+#define NEMP 3
+
+struct empleado{
     char nombre[50];
     int fecha;
     char nivelEstudios[50];
-    int telefono;
+    int tipoPuesto;
+    int nTelefono;
     char matricula[12];
     int codigoBarras;
 };
 
-void intruducirDatosEmpleado(struct empleado *e){
-    printf("Introduzca el nombre del empleado: ");
+void introducirDatosEmpleadoOficinista(struct empleado *e) {
+    printf("\nIntroduzca el número de teléfono: ");
+    scanf("%d", &e->nTelefono);
+}
+
+void introducirDatosEmpleadoConductor(struct empleado *e) {
+    printf("\nIntroduzca la matricula: ");
+    scanf("%s", e->matricula);
+}
+
+void introducirDatosEmpleadoTecnico(struct empleado *e) {
+    printf("\nIntroduzca el codigo de barras: ");
+    scanf("%d", e->codigoBarras);
+}
+
+void introducirDatosGlobal(struct empleado *e) {
+    printf("\nIntroduzca el nombre del empleado: ");
     gets(e->nombre);
-    printf("Introduzca la fecha de nacimiento (YYYYMMDD):");
+    printf("\nIntroduzca la fecha del empleado (YYYYMMDD): ");
     scanf("%d", &e->fecha);
-    printf("Introduzca el nivel de estudios del empleado: ");
-    gets(e->nivelEstudios);
-    printf("Introduzca el tipo de puesto: (0 - Oficinista 1 - Conductor 2 - Técnico) ");
+    printf("\nIntroduzca el nivel de estudios del empleado: ");
+    scanf("%s", e->nivelEstudios);
+    printf("\nIntroduzca el tipo de puesto del empleado (0 - Oficinista, 1 Conductor, 2 - Tecnico): ");
     scanf("%d", &e->tipoPuesto);
     if (e->tipoPuesto == 0) {
-        auxOficinista(&e->telefono);
+        introducirDatosEmpleadoOficinista(e);
     } else if (e->tipoPuesto == 1) {
-        printf("Introduzca la matrícula: ");
-    scanf("%s", e->matricula);
+        introducirDatosEmpleadoConductor(e);
     } else if (e->tipoPuesto == 2) {
-        printf("Introduzca el código de barras: ");
-        scanf("%d", &e->codigoBarras);
-    } else {
-        printf("Error tipo de puesto no valido");
-        intruducirDatosEmpleado(e);
+        introducirDatosEmpleadoTecnico(e);
     }
-};
-
-void auxOficinista(int *n) {   
-    printf("Introduzca el número de teléfono: ");
-    scanf("%d", n);
 }
 
-void auxConductor(struct empleado *e) {   
-    printf("Introduzca la matrícula: ");
-    scanf("%s", e->matricula);
+void imprimirDatosEmpleadoOficinista(struct empleado e) {
+    printf("\nEl tipo de empleo del empleado es oficinista");
+    printf("\nEl número de teléfono: %d", e.nTelefono);
 }
 
-void auxTecnico(struct empleado *e) {   
-    printf("Introduzca el código de barras: ");
-    scanf("%d", &e->codigoBarras);
+void imprimirDatosEmpleadoConductor(struct empleado e) {
+    printf("\nEl tipo de empleo del empleado es conductor");
+    printf("\nLa matrícula es: %s", e.matricula);
 }
 
+void imprimirDatosEmpleadoTecnico(struct empleado e) {
+    printf("\nEl tipo de empleo del empleado es tecnico");
+    printf("\nEl codigo de barras es: %d", e.codigoBarras);
+}
 
-void imprimirDatosEmpleado(struct empleado e) {
-    printf("El nombre del empleado es: %s\n", e.nombre);
-    printf("La fecha de nacimiento del empleado es: %d\n", e.fecha);
-    printf("El nivel de estudios del empleado es: %s\n", e.nivelEstudios);
+void imprimirDatosGlobal(struct empleado e) {
+    printf("\nEl nombre del empleado es: %s", e.nombre);
+    printf("\nLa fecha del empleado (YYYYMMDD): %d", e.fecha);
+    printf("\nNivel de estudios del empleado: %s", e.nivelEstudios);
     if (e.tipoPuesto == 0) {
-        printf("El teléfono del empleado es: %d\n", e.telefono);
+        imprimirDatosEmpleadoOficinista(e);
     } else if (e.tipoPuesto == 1) {
-        printf("La matrícula del empleado es: %s", e.matricula);
+        imprimirDatosEmpleadoConductor(e);
     } else if (e.tipoPuesto == 2) {
-        printf("El código de barras es: %d", e.codigoBarras);
+        imprimirDatosEmpleadoTecnico(e);
     }
 }
 
 int main() {
-
+    struct empleado e[NEMP];
+    for(int i = 0; i < NEMP; i++) {
+        introducirDatosGlobal(&e[i]);
+        imprimirDatosGlobal(e[i]);
+    }
     return 0;
 }
