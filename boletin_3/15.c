@@ -1,5 +1,6 @@
-/* Plantee e implemente en Lenguaje C la función EsVocal (c: char) que recibe un carácter e indica  si es vocal o no 
-(sin diferenciar entre mayúsculas y minúsculas). Además de la función, implemente la función apropiada  para probar 
+/* Plantee e implemente en Lenguaje C la función EsVocal (c: char) que recibe un
+ carácter e indica  si es vocal o no (sin diferenciar entre mayúsculas y 
+ minúsculas). Además de la función, implemente la función apropiada  para probar 
 su funcionamiento, activando este último desde el programa principal.  */
 #include<stdio.h>
 

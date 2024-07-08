@@ -1,6 +1,9 @@
-/*  Diseñe la estructura para almacenar en memoria la información de los trabajadores de un taller de 20 empleados. Si el empleado es oficinista tendrá un número 
-de teléfono; si es conductor tendrá asignado el número de matrícula de un vehículo; y si es técnico tendrá asignado el código de barras de un ordenador. Se debe 
-conocer el nombre, la fecha de nacimiento, tipo de puesto de trabajo y el nivel de estudios de todos los trabajadores.  */
+/*  Diseñe la estructura para almacenar en memoria la información de los 
+trabajadores de un taller de 20 empleados. Si el empleado es oficinista tendrá 
+un número de teléfono; si es conductor tendrá asignado el número de matrícula de
+ un vehículo; y si es técnico tendrá asignado el código de barras de un ordenador.
+Se debe conocer el nombre, la fecha de nacimiento, tipo de puesto de trabajo y 
+el nivel de estudios de todos los trabajadores. */
 #include <stdio.h>
 
 #define NEMP 3
@@ -37,7 +40,8 @@ void introducirDatosGlobal(struct empleado *e) {
     scanf("%d", &e->fecha);
     printf("\nIntroduzca el nivel de estudios del empleado: ");
     scanf("%s", e->nivelEstudios);
-    printf("\nIntroduzca el tipo de puesto del empleado (0 - Oficinista, 1 Conductor, 2 - Tecnico): ");
+    printf("\nIntroduzca el tipo de puesto del empleado (0 - Oficinista, "
+            "1 Conductor, 2 - Tecnico): ");
     scanf("%d", &e->tipoPuesto);
     if (e->tipoPuesto == 0) {
         introducirDatosEmpleadoOficinista(e);

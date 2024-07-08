@@ -1,6 +1,6 @@
-/* Plantee e implemente un programa en Lenguaje C que mediante una serie de subprogramas determine si una fecha introducida por teclado es o no correcta, 
+/* Plantee e implemente un programa en Lenguaje C que mediante una serie de 
+subprogramas determine si una fecha introducida por teclado es o no correcta, 
 teniendo en cuenta para ello los años bisiestos. */
-
 #include<stdio.h>
 
 void pedirFecha(int *d, int *m, int *a) { 
@@ -26,15 +26,16 @@ int esCorrecta(int d, int m, int a) {
             return 0;
         else {
             switch (m) {
-                case 1: case 3: case 5: case 7: case 8: case 10: case 12:       // meses de 31 días
+                case 1: case 3: case 5: case 7:     // meses de 31 días
+                case 8: case 10: case 12:       
                     if (d < 1 || d > 31)
                         return 0;
                     break;
-                case 4: case 6: case 9: case 11:                                // meses de 30 días
+                case 4: case 6: case 9: case 11:    // meses de 30 días
                     if (d < 1 || d > 30)
                         return 0;
                     break;
-                case 2:                                                         // febrero 28 días
+                case 2:                             // febrero 28 días
                     if (esBisiesto(a)==1) {
                         if (d < 1 || d > 29)
                             return 0;

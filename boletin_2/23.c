@@ -1,6 +1,6 @@
-/*  Plantee  e  implemente  un  programa  en  Lenguaje  C  que  solicite  un  número  por teclado y que esté constantemente solicitando 
-un número si no está comprendido entre 20 y 30 ambos inclusive. */
-
+/* Plantee e implemente un programa en Lenguaje C que solicite un número por 
+teclado y que esté constantemente solicitando un número si no está comprendido 
+entre 20 y 30 ambos inclusive. */
 #include<stdio.h>
 
 int main() {

@@ -1,4 +1,6 @@
-/* Plantee e implemente un programa en lenguaje C que solicite el nombre y la edad de un usuario por teclado de forma que el ordenador le salude indicándole la edad que tiene.*/
+/* Plantee e implemente un programa en lenguaje C que solicite el nombre y la 
+edad de un usuario por teclado de forma que el ordenador le salude indicándole
+ la edad que tiene.*/
 #include<stdio.h>
 
 int main() {

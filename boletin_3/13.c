@@ -1,6 +1,7 @@
-/* Plantee e implemente en Lenguaje C una función que calcule el valor del siguiente polinomio: 3x5 + 2x4 – 5x3 – x2 + 7x - 6 
-Además del subprograma, implemente la función apropiada para probar su funcionamiento preguntándole al usuario el valor de x, 
-y activando esta última desde el programa principal.  */
+/* Plantee e implemente en Lenguaje C una función que calcule el valor del 
+siguiente polinomio: 3x5 + 2x4 – 5x3 – x2 + 7x - 6 Además del subprograma, 
+implemente la función apropiada para probar su funcionamiento preguntándole al 
+usuario el valor de x, y activando esta última desde el programa principal. */
 #include<stdio.h>
 
 int pedirN(const char *string) {

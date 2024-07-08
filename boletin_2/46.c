@@ -1,6 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C  muestre por pantalla la tabla de multiplicación en el formado dado.
-*/
-
+/* Plantee e implemente un programa en Lenguaje C  muestre por pantalla la tabla
+ de multiplicación en el formado dado. */
 #include<stdio.h>
 
 int main() {

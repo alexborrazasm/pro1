@@ -1,12 +1,12 @@
-/* Plantee e implemente un programa en Lenguaje C que a partir de un número entero mayor que 0 introducido por teclado obtenga la suma de los 
-primeros n términos de la sucesión de Fibonacci. */
-
+/* Plantee e implemente un programa en Lenguaje C que a partir de un número 
+entero mayor que 0 introducido por teclado obtenga la suma de los primeros n 
+términos de la sucesión de Fibonacci. */
 #include<stdio.h>
 
 void askInt(const char *mensaje, int *n) {
     printf("%s", mensaje);
     scanf("%d", n);
-}   // Función que pide un entero por teclado y lo guarda en la dirreción de memória que le pasemos
+}   // Función que pide un entero por teclado
 
 int fibonacci(int n) {
     int resultado, a, b;
@@ -31,14 +31,15 @@ int main() {
     if (n <= 0) {
         printf("ERROR, número menor que 0\n");
         return 1;
-    }   // Si el número introduccido es menor o igual a 0, terminamos el programa con error
+    }   // Si el número introduccido es menor o igual a 0, error
 
     for (int i = 0; i < n; i++) {
         fib = fibonacci(i);
         suma += fib;
     }   // Calculamos la suma de n términos de fibonacci
 
-    printf("La suma de los %d primeros números de la succesión de fibonacci es igual a %d\n", n, suma);
+    printf("La suma de los %d primeros números de la succesión de fibonacci es "
+           "igual a %d\n", n, suma);
 
     return 0;
 }

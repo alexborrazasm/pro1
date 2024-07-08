@@ -1,4 +1,5 @@
-/*  Plantee e implemente un programa en Lenguaje C que de pase de euros (€) a dólares ($USA). El programa admitirá un tipo de cambio razonable, esto es, no 
+/*  Plantee e implemente un programa en Lenguaje C que de pase de euros (€) a 
+dólares ($USA). El programa admitirá un tipo de cambio razonable, esto es, no 
 negativo ni excesivamente grande. */
 #include<stdio.h>
 

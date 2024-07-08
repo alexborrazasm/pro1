@@ -1,5 +1,6 @@
-/* Plantee e implemente una función en lenguaje C que reciba dos arrays de reales desordenados de 30 elementos cada uno y devuelva una array ordenado con los 
-elementos de los dos anteriores.  */
+/* Plantee e implemente una función en lenguaje C que reciba dos arrays de 
+reales desordenados de 30 elementos cada uno y devuelva una array ordenado con 
+los elementos de los dos anteriores.  */
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -11,7 +12,8 @@ int pedirArray(const char *mensaje, tVector v) {
     float num;
     int i = 0;
     printf("\n%s\n", mensaje);
-    printf("Introducca un array de reales, hasta pulsar <enter>:\nFormato -> x y z n k\n-> ");
+    printf("Introducca un array de reales, hasta pulsar <enter>:\nFormato -> x"
+            " y z n k\n-> ");
 
     do {
         if (scanf("%f", &num) != 1) {

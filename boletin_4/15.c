@@ -1,11 +1,14 @@
-/* Plantee e implemente un programa en lenguaje C que permita introducir apropiadamente una matriz NxN de números reales y que muestre por pantalla en formato 
-matricial tanto la matriz original introducida como su matriz traspuesta. */
+/* Plantee e implemente un programa en lenguaje C que permita introducir 
+apropiadamente una matriz NxN de números reales y que muestre por pantalla en 
+formato matricial tanto la matriz original introducida como su matriz traspuesta.
+*/
 #include<stdio.h>
 #include <stdlib.h>
 
 #define TAM 20
 
-void imprimirMatriz(const char *mensaje,float matriz[][TAM], int filas, int columnas) {
+void imprimirMatriz(const char *mensaje,float matriz[][TAM], int filas,
+                     int columnas) {
     printf("\n%s:\n\n", mensaje);
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
@@ -37,7 +40,8 @@ void rellenarMatriz(float matriz[][TAM], int filas, int columnas) {
     int j;
     float num;
 
-    printf("\nIntroduce la matriz fila por fila, %d elementos, pulsando <enter>:\n", columnas);
+    printf("\nIntroduce la matriz fila por fila, %d elementos, pulsando "
+            "<enter>:\n", columnas);
 
     for (int i = 0; i < filas; i++) {
         printf("%d: ", i+1);
@@ -56,7 +60,8 @@ void rellenarMatriz(float matriz[][TAM], int filas, int columnas) {
     }
 }
 
-void transMatriz(float matriz[][TAM], float matrizSol[][TAM], int filas, int columnas) {
+void transMatriz(float matriz[][TAM], float matrizSol[][TAM], int filas,
+                 int columnas) {
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
             matrizSol[j][i] = matriz[i][j];

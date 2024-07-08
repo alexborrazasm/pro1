@@ -1,4 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C para convertir un número decimal a binario. */
+/* Plantee e implemente un programa en Lenguaje C para convertir un número 
+decimal a binario. */
 #include <stdio.h>
 
 int main() {

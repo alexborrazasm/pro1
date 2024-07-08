@@ -1,6 +1,9 @@
-/* Plantee e implemente un programa en lenguaje C que permita introducir propiadamente una matriz NxN de números enteros (0<N<10), la visualice apropiadamente 
-por pantalla (formato  matricial) y muestre la posición de un elemento punto de silla, si existe. Una matriz presenta un punto de silla si alguna posición de 
-la misma es al mismo tiempo el menor valor de su fila y el mayor valor de su columna.  */
+/* Plantee e implemente un programa en lenguaje C que permita introducir 
+propiadamente una matriz NxN de números enteros (0<N<10), la visualice 
+apropiadamente por pantalla (formato  matricial) y muestre la posición de un 
+elemento punto de silla, si existe. Una matriz presenta un punto de silla si 
+alguna posición de la misma es al mismo tiempo el menor valor de su fila y el 
+mayor valor de su columna.  */
 #include<stdio.h>
 #include<limits.h>
 #include<stdlib.h>
@@ -25,7 +28,8 @@ int getInt(const char *string, int min, int max) {
 void getMatrix(matrix m, int n) {
     int num;
 
-    printf("\nIntroduce la matriz fila por fila, %d elementos, pulsando <enter>:\n", n);
+    printf("\nIntroduce la matriz fila por fila, %d elementos, pulsando"
+    " <enter>:\n", n);
 
     for (int i = 0; i < n; i++) {
             printf("Fila %d: ", i+1);
@@ -56,7 +60,8 @@ void printMatrix(const char *string, matrix matrix, int n) {
     }
 }
 
-bool isChair(int i, int j, matrix mat, int n) {  // Esto se puede optimizar guardando el valor máximo en cada columna 
+// Esto se puede optimizar guardando el valor máximo en cada columna
+bool isChair(int i, int j, matrix mat, int n) {   
     int pMin = -1, min = INT_MAX;;
     int pMax = -1, max = INT_MIN;
 
@@ -91,7 +96,8 @@ void chairPoint(matrix m, int n) {
     }
     
     if (check) {
-        printf("\nLa posición de un elemento punto de silla es fila = %d y columna = %d\n", iChair+1, jChair+1);
+        printf("\nLa posición de un elemento punto de silla es fila = %d y "
+                "columna = %d\n", iChair+1, jChair+1);
     } else {
         printf("\nNo existe ningun elemento punto de silla\n");
     }

@@ -1,5 +1,7 @@
-/* Plantee e implemente una función recursiva en Lenguaje C para calcular la N-ésima potencia de un número entero. Además de 
-dicha función, implemente la función apropiada para probar su funcionamiento, activando esta último desde el programa principal. */
+/* Plantee e implemente una función recursiva en Lenguaje C para calcular la 
+N-ésima potencia de un número entero. Además de dicha función, implemente la 
+función apropiada para probar su funcionamiento, activando esta último desde el 
+programa principal. */
 #include<stdio.h>
 
 int pedirN(const char *string) {

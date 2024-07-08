@@ -1,10 +1,12 @@
-/* Plantee e implemente en Lenguaje C un programa que calcule la impedancia (Z) en ohmios de un circuito LC en serie. 
-Tenga en cuenta que Z = XL - XC. Donde XC es la reactancia capacitiva y XL la reactancia inductiva. Implemente las 
-funciones apropiadas para los cálculos, y pruebe su funcionamiento, activándolas desde el programa principal. Pídale 
-al usuario el valor del condensador en faradios, el valor de la inductancia en henrios y el valor de la frecuencia en 
+/* Plantee e implemente en Lenguaje C un programa que calcule la impedancia (Z) 
+en ohmios de un circuito LC en serie. Tenga en cuenta que Z = XL - XC. Donde XC 
+es la reactancia capacitiva y XL la reactancia inductiva. Implemente las 
+funciones apropiadas para los cálculos, y pruebe su funcionamiento, activándolas
+ desde el programa principal. Pídale al usuario el valor del condensador en 
+ faradios, el valor de la inductancia en henrios y el valor de la frecuencia en 
 hertzios para los cálculos de las reactancias. */
-#include <stdio.h>
-#include <math.h>
+#include<stdio.h>
+#include<math.h>
 
 // Función para solicitar al usuario un valor de tipo double
 double pedirF(const char *string) {
@@ -33,7 +35,8 @@ int main() {
     // Variables para almacenar los valores ingresados por el usuario
     double C, L, f;
 
-    // Pedir al usuario que ingrese los valores del condensador, la inductancia y la frecuencia
+    // Pedir al usuario que ingrese los valores del condensador, la inductancia 
+    //y la frecuencia
     C = pedirF("Ingrese el valor del condensador en faradios (C)");
     L = pedirF("Ingrese el valor de la inductancia en henrios (L)");
     f = pedirF("Ingrese el valor de la frecuencia en hertzios (f)");

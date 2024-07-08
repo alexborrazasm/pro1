@@ -1,5 +1,7 @@
-/*  Plantee e implemente una función en lenguaje C que reciba dos arrays de tipo base carácter, sin finalizar en ‘\0’, es decir, no son cadenas; ambos desordenados 
-y con 100 elementos cada uno y devuelva un array ordenado con los elementos de los dos anteriores. */
+/*  Plantee e implemente una función en lenguaje C que reciba dos arrays de tipo
+ base carácter, sin finalizar en ‘\0’, es decir, no son cadenas; ambos desordenados 
+y con 100 elementos cada uno y devuelva un array ordenado con los elementos de los
+ dos anteriores. */
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>

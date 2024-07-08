@@ -1,5 +1,5 @@
-/*  Plantee e implemente una función recursiva en lenguaje C que devuelva la suma 
-de los elementos de un array de enteros. */
+/*  Plantee e implemente una función recursiva en lenguaje C que devuelva la 
+suma de los elementos de un array de enteros. */
 #include<stdio.h>
 
 #define TAM 50
@@ -46,7 +46,8 @@ void imprimirArray(const char *string, int array[], int n) {
 
 int main() {
     int v[TAM];
-    int suma, tamV = pedirArray("Dime un vector de enteros a sumar, y pulsa enter", v, TAM);
+    int suma, tamV = pedirArray("Dime un vector de enteros a sumar, y pulsa enter",
+                                 v, TAM);
 
     imprimirArray("El array introducido es", v, tamV);
     

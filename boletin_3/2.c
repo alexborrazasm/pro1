@@ -1,7 +1,8 @@
-/* Plantee e implemente un subprograma en Lenguaje C que a partir de la inicial de un día de la semana (L, M, X, J, V, S, D) 
-introducida mediante el teclado, devuelva  y  muestre  por  pantalla  el  nombre  del  día  en  cuestión.  Además  del 
-subprograma, implemente la función apropiada para probar su funcionamiento. */
-
+/* Plantee e implemente un subprograma en Lenguaje C que a partir de la inicial 
+de un día de la semana (L, M, X, J, V, S, D) introducida mediante el teclado, 
+devuelva y muestre por pantalla el nombre del día en cuestión. Además
+del subprograma, implemente la función apropiada para probar su funcionamiento.
+*/
 #include<stdio.h>
 
 void inicialDia(const char a) {
@@ -41,6 +42,8 @@ char pedirChar(const char *mensaje) {
 }
 
 int main() {
-    inicialDia(pedirChar("Dime una inicial de un día de la semana (L, M, X, J, V, S, D): "));
+    inicialDia(pedirChar("Dime una inicial de un día de la semana "
+                         "(L, M, X, J, V, S, D): "));
+    
     return 0;
 }

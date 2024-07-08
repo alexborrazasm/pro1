@@ -1,5 +1,6 @@
-/* Plantee e implemente una función en Lenguaje C para leer un entero dentro de un intervalo, cuyos límites inferior y 
-superior los proporcione el usuario por teclado. Además de la función, implemente la función apropiada para probar su 
+/* Plantee e implemente una función en Lenguaje C para leer un entero dentro de 
+un intervalo, cuyos límites inferior y superior los proporcione el usuario por 
+teclado. Además de la función, implemente la función apropiada para probar su 
 funcionamiento, activando este último desde el programa principal. */
 #include <stdio.h>
 
@@ -31,4 +32,5 @@ void test() {
 
 int main() {
     test();
+    return 0;
 }

@@ -1,7 +1,8 @@
-/* Plantee e implemente una función en lenguaje C que indique si un array de enteros es capicúa.  */
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+/* Plantee e implemente una función en lenguaje C que indique si un array de 
+enteros es capicúa.  */
+#include<stdio.h>
+#include<stdbool.h>
+#include<stdlib.h>
 
 #define TAM 20
 
@@ -9,7 +10,8 @@ int pedirArray(int array[], int n) {
     int i = 0;
     int num;
 
-    printf("Introduzca los elementos del array (máximo %d) separados por espacios, <enter> para terminar:\n", n);
+    printf("Introduzca los elementos del array (máximo %d) separados por "
+            "espacios, <enter> para terminar:\n", n);
 
     do {
         if (i >= n) {
@@ -61,5 +63,6 @@ int main() {
     } else {
         printf("No es capicua.\n");
     }
+    
     return 0;
 }

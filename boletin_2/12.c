@@ -1,6 +1,6 @@
-/* Plantee e implemente un programa en Lenguaje C que solicite tres números enteros positivos (por teclado) y que muestre por pantalla el 
-cociente y el resto de dividir el mayor de ellos por el menor */
-
+/* Plantee e implemente un programa en Lenguaje C que solicite tres números 
+enteros positivos (por teclado) y que muestre por pantalla el cociente y el 
+resto de dividir el mayor de ellos por el menor */
 #include<stdio.h>
 
 int pedirInt(const char* mensaje) {
@@ -34,8 +34,8 @@ int main() {
         return 0;
     }
 
-    printf("\n%10d dividido |entre %d\n                    ---------\n           R: %d       C: %d\n"
-    , mayor, menor, mayor % menor, mayor / menor);
+    printf("\n%10d dividido |entre %d\n                    ---------\n         "
+    "  R: %d       C: %d\n", mayor, menor, mayor % menor, mayor / menor);
     
     return 0;
 }

@@ -1,5 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C para obtener elementos del triángulo de Floyd hasta un número dado. */
-
+/* Plantee e implemente un programa en Lenguaje C para obtener elementos del 
+triángulo de Floyd hasta un número dado. */
 #include <stdio.h>
 
 int main() {

@@ -1,5 +1,7 @@
-/* Plantee e implemente un programa en lenguaje C que mediante un menú apropiado permita al usuario introducir dos matrices NxN de números enteros (0<N<10) y 
-seleccionar la operación (suma, resta o producto) que desea realizar con ellas. Muestre los resultados de la operación seleccionada por pantalla en formato 
+/* Plantee e implemente un programa en lenguaje C que mediante un menú apropiado
+ permita al usuario introducir dos matrices NxN de números enteros (0<N<10) y 
+seleccionar la operación (suma, resta o producto) que desea realizar con ellas. 
+Muestre los resultados de la operación seleccionada por pantalla en formato 
 matricial. */
 #include<stdio.h>
 #include<stdbool.h>
@@ -24,7 +26,8 @@ int getInt(const char *string, int min, int max) {
 void getMatrix(matrix m, int n, bool *check) {
     int num;
 
-    printf("\nIntroduce la matriz fila por fila, %d elementos, pulsando <enter>:\n", n);
+    printf("\nIntroduce la matriz fila por fila, %d elementos, pulsando "
+            "<enter>:\n", n);
 
     for (int i = 0; i < n; i++) {
             printf("Fila %d: ", i+1);

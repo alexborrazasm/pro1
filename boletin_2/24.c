@@ -1,6 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C que  muestre  por pantalla la tabla de multiplicar del 7 en un formato similar al 
-siguiente */
-
+/* Plantee e implemente un programa en Lenguaje C que  muestre  por pantalla la 
+tabla de multiplicar del 7 en un formato similar al siguiente */
 #include<stdio.h>
 
 int main() {

@@ -1,9 +1,9 @@
-/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla un menú en el que el usuario pueda elegir entre: 
-- Visualizar una tabla de los números, los cuadrados y las raíces cuadradas de aquellos números contenidos en un intervalo 
-de enteros indicado por el usuario.
+/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla un 
+menú en el que el usuario pueda elegir entre: 
+- Visualizar una tabla de los números, los cuadrados y las raíces cuadradas de 
+aquellos números contenidos en un intervalo de enteros indicado por el usuario.
 - Mostrar por pantalla los divisores de un número entero que indique el usuario.
 - Salir del programa. */
-
 #include<stdio.h>
 #include<math.h>
 
@@ -13,10 +13,11 @@ void pedirN (const char *mensaje, int *n) { // Función que "rellena" enteros
 }
 
 void menu() {
-    printf("Menu:\n");
-    printf("(1) Tabla de los números, los cuadrados y las raíces cuadradas de un intervalo.\n");
-    printf("(2) Mostrar por pantalla los divisores de un número entero.\n");
-    printf("(3) Salir del programa.\n");
+    printf("Menu:\n"
+           "(1) Tabla de los números, los cuadrados y las raíces cuadradas de "
+           "un intervalo.\n";
+           "(2) Mostrar por pantalla los divisores de un número entero.\n"
+           "(3) Salir del programa.\n");
 }
 
 void divInt(int n) {

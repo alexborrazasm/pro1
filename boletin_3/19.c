@@ -1,6 +1,7 @@
-/* Plantee e implemente una función en Lenguaje C para cambiar a mayúsculas un carácter (entre la a y la z). Además de esta 
-función, implemente la función apropiada para probar su funcionamiento, tal que lea una frase de teclado (hasta que se pulse 
-enter) y la muestre por pantalla cambiada a mayúsculas.  */
+/* Plantee e implemente una función en Lenguaje C para cambiar a mayúsculas un 
+carácter (entre la a y la z). Además de esta función, implemente la función 
+apropiada para probar su funcionamiento, tal que lea una frase de teclado (hasta
+ que se pulse enter) y la muestre por pantalla cambiada a mayúsculas. */
 #include<stdio.h>
 
 #define TAM 500

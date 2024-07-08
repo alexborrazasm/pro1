@@ -1,5 +1,6 @@
-/* Plantee e implemente una función en lenguaje C que reciba dos arrays de enteros desordenados de 50 elementos cada uno y devuelva una array ordenado con los 
-elementos de los dos anteriores. */
+/* Plantee e implemente una función en lenguaje C que reciba dos arrays de 
+enteros desordenados de 50 elementos cada uno y devuelva una array ordenado con 
+los elementos de los dos anteriores. */
 #include<stdio.h>
 
 #define TAM 50
@@ -69,8 +70,10 @@ int main() {
     int array1[TAM];
     int array2[TAM];
     int arrayOrd[sizeof(array1) + sizeof(array2)];
-    int elementos1 = pedirArray("Dime los elementos del primer array (máximo 50)", array1, TAM);
-    int elementos2 = pedirArray("Dime los elementos del segundo array (máximo 50)", array2, TAM);
+    int elementos1 = pedirArray("Dime los elementos del primer array (máximo 50)",
+                                 array1, TAM);
+    int elementos2 = pedirArray("Dime los elementos del segundo array (máximo 50)",
+                                 array2, TAM);
 
     ord(array1, elementos1, array2, elementos2, arrayOrd);
 

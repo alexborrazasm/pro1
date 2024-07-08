@@ -1,7 +1,7 @@
-/* Plantee e implemente una función recursiva en Lenguaje C que sume los números enteros positivos hasta un entero dado.
-Además de la función, implemente la función apropiada para probar su funcionamiento, activando este último desde el programa 
-principal.
-*/
+/* Plantee e implemente una función recursiva en Lenguaje C que sume los números
+ enteros positivos hasta un entero dado. Además de la función, implemente la 
+ función apropiada para probar su funcionamiento, activando este último desde el
+programa principal. */
 #include<stdio.h>
 
 int pedirN(const char *string) {
@@ -24,7 +24,8 @@ int sumar(int n) {
 }
 
 void test() {
-    printf("El resultado es %d\n", sumar(pedirN("Dime hasta que número quieres sumar (1+2+3+...+N)")));
+    printf("El resultado es %d\n", sumar(pedirN("Dime hasta que número quieres "
+                                                "sumar (1+2+3+...+N)")));
 }
 
 int main() {

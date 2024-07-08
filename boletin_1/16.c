@@ -1,12 +1,12 @@
-/* Plantee e implemente un programa en LENGUAJE C para calcular la suma de dos  matrices  2x2.  Pida  los  datos  oportunos  y  calcule  el  resultado  deseado, mostrándolo después 
-en pantalla.  */
-
+/* Plantee e implemente un programa en LENGUAJE C para calcular la suma de dos 
+matrices 2x2. Pida los datos oportunos y calcule el resultado deseado, 
+mostrándolo después en pantalla. */
 #include<stdio.h>
 
 int main() {
     int A11, A12, A21, A22; // inicializamos la matriz 1
     int B11, B12, B21, B22; // inicializamos la matriz 2
-    int C11, C12, C21, C22; // inicializamos la matriz 3, el resultado de la suma
+    int C11, C12, C21, C22; // inicializamos la matriz 3 el resultado de la suma
 
     printf("Programa que suma 2 matrices de 2x2, A y B\n");
     // Entrada de la matriz A
@@ -29,9 +29,8 @@ int main() {
 
     // Salida
 
-    printf("El resultado es:\n\t\t\t|%d %d|\n\t\t\t|%d %d|\n", C11, C12, C21, C22);
-
-
+    printf("El resultado es:\n\t\t\t|%d %d|\n\t\t\t|%d %d|\n",
+             C11, C12, C21, C22);
 
     return 0;
 }

@@ -1,7 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla los primeros 1000 números enteros que cumplen 
-la siguiente condición: x^2+y^2= z^2
-*/
-
+/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla los 
+primeros 1000 números enteros que cumplen la siguiente condición: x^2+y^2= z^2 */
 #include<stdio.h>
 
 int main() {

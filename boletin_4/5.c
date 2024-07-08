@@ -1,7 +1,8 @@
-/* Plantee e implemente un programa en lenguaje C para almacenar las temperaturas (en ºC) registradas en una ciudad durante un día 
-hora a hora (0-23). Introduzca las temperaturas a partir de los datos proporcionados por el usuario, visualice ordenadamente las 
-temperaturas registradas y calcule y muestre por pantalla la temperatura máxima, mínima y media alcanzadas.
-*/
+/* Plantee e implemente un programa en lenguaje C para almacenar las temperaturas
+ (en ºC) registradas en una ciudad durante un día hora a hora (0-23). Introduzca
+  las temperaturas a partir de los datos proporcionados por el usuario, visualice
+  ordenadamente las temperaturas registradas y calcule y muestre por pantalla la
+   temperatura máxima, mínima y media alcanzadas */
 #include<stdio.h>
 #include<limits.h>
 
@@ -64,10 +65,12 @@ void tempDia() {
     printHoras(temps, TAM);
     // Temperatura máxima
     maxi = maxV(temps, TAM);
-    printf("\nLa temperatura máxima ha sido %.2fº C a las %d:00\n", temps[maxi], maxi);
+    printf("\nLa temperatura máxima ha sido %.2fº C a las %d:00\n",
+             temps[maxi], maxi);
     // Temperatura mínima
     mini = minV(temps, TAM);
-    printf("La temperatura mínima ha sido %.2fº C a las %d:00\n", temps[mini], mini);
+    printf("La temperatura mínima ha sido %.2fº C a las %d:00\n",
+            temps[mini], mini);
     // Temperatura media
     printf("La temperatura media ha sido %.2fº C\n", mediaV(temps, TAM));
 }

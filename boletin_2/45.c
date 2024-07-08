@@ -1,6 +1,6 @@
-/* Plantee e implemente un programa en Lenguaje C que calcule cuantos años tarda en doblarse un capital inicial (introducido por 
-teclado), si se recibe un % de intereses al año, también determinado por el usuario a través del teclado. 
- */
+/* Plantee e implemente un programa en Lenguaje C que calcule cuantos años tarda
+ en doblarse un capital inicial (introducido por teclado), si se recibe un % de 
+ intereses al año, también determinado por el usuario a través del teclado. */
 #include <stdio.h>
 
 int main() {

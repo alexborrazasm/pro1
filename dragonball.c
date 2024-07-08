@@ -1,10 +1,7 @@
-//
-// Created by brais on 15/12/2023.
-//
-#include <stdio.h>
-#include <string.h>
-#include <time.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<string.h>
+#include<time.h>
+#include<stdlib.h>
 
 struct personaje {
     char nombre[20];

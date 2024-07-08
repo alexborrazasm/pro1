@@ -1,5 +1,5 @@
-/*  Plantee e implemente un programa en Lenguaje C que sume los primeros 100 números enteros. Realícelo con cada uno de los tres bucles. */
-
+/*  Plantee e implemente un programa en Lenguaje C que sume los primeros 100 
+números enteros. Realícelo con cada uno de los tres bucles. */
 #include<stdio.h>
 
 int main() {

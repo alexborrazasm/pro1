@@ -1,6 +1,7 @@
-/* Plantee e implemente un programa en lenguaje C, que utilizando exclusivamente subprogramas, solicite nombres de animales por 
-teclado y vaya rellenando un array de 7 elementos, mostrándolos posteriormente por pantalla apropiadamente.
-*/
+/* Plantee e implemente un programa en lenguaje C, que utilizando exclusivamente
+ subprogramas, solicite nombres de animales por teclado y vaya rellenando un 
+ array de 7 elementos, mostrándolos posteriormente por pantalla apropiadamente. 
+ */
 #include<stdio.h>
 #include <string.h>
 

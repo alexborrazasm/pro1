@@ -1,6 +1,6 @@
-/* Plantee e implemente un programa en Lenguaje C que muestre la tabla de multiplicar de los cinco primeros números en un formato similar 
-al indicado en el ejercicio anterior. */
-
+/* Plantee e implemente un programa en Lenguaje C que muestre la tabla de 
+multiplicar de los cinco primeros números en un formato similar al indicado en 
+el ejercicio anterior. */
 #include<stdio.h>
 
 int main() {

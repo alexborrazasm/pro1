@@ -1,6 +1,6 @@
-/* Plantee e implemente un programa en Lenguaje C que solicite por teclado dos números enteros y que muestre un mensaje indicando si el primero es o no divisible 
-por el segundo. */
-
+/* Plantee e implemente un programa en Lenguaje C que solicite por teclado dos 
+números enteros y que muestre un mensaje indicando si el primero es o no 
+divisible por el segundo. */
 #include<stdio.h>
 
 int main() {

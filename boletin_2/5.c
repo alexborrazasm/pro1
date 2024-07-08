@@ -1,5 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla tres números enteros introducidos por teclado ordenados de menor a mayor.  */#
-
+/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla tres 
+números enteros introducidos por teclado ordenados de menor a mayor.  */
 #include<stdio.h>
 
 int main() {

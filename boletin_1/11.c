@@ -1,5 +1,6 @@
-/* Plantee e implemente un programa en Lenguaje C que empleando expresiones, convierta un tiempo expresado en segundos al formato horas : minutos : segundos. */
-
+/* Plantee e implemente un programa en Lenguaje C que empleando expresiones, 
+convierta un tiempo expresado en segundos al formato horas : minutos : segundos.
+*/
 #include<stdio.h>
 
 main() {
@@ -12,6 +13,7 @@ main() {
     minutos = segundos / 60;
     segundos = segundos % 60;
 
-    printf("%d segundos son %dh : %dm : %ds\n", entrada, horas, minutos, segundos);
+    printf("%d segundos son %dh : %dm : %ds\n",
+             entrada, horas, minutos, segundos);
     return 0;
 }

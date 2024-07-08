@@ -1,5 +1,7 @@
-/* Plantee e implemente un subprograma en Lenguaje C que calcule el término N de la sucesión de Fibonacci. Además del subprograma, 
-implemente la función apropiada para probar su funcionamiento, activando esta última desde el programa principal. */
+/* Plantee e implemente un subprograma en Lenguaje C que calcule el término N de
+ la sucesión de Fibonacci. Además del subprograma, implemente la función 
+apropiada para probar su funcionamiento, activando esta última desde el programa
+ principal. */
 #include<stdio.h>
 
 int pedirN(const char *string) {
@@ -28,7 +30,8 @@ int fib(int n) {
 }
 
 void test() {
-    int n = pedirN("Programa que calcula un término de la sucesión de fibonacci\nDime un número");
+    int n = pedirN("Programa que calcula un término de la sucesión de fibonacci"
+                    "\nDime un número");
     printf("El resultado es: %d\n", fib(n));
 }
 

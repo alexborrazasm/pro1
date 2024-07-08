@@ -1,5 +1,6 @@
-/* Plantee e implemente una función en Lenguaje C para saber si un carácter es o no un dígito. Además de la función, implemente 
-la función apropiada para probar su funcionamiento, activando este último desde el programa principal. */
+/* Plantee e implemente una función en Lenguaje C para saber si un carácter es o
+ no un dígito. Además de la función, implemente la función apropiada para probar
+  su funcionamiento, activando este último desde el programa principal. */
 #include<stdio.h>
 
 int esNumero(char c) {

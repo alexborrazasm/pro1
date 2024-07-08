@@ -1,5 +1,7 @@
-/* Plantee e implemente un programa en  lenguaje C que permita introducir apropiadamente una matriz NxN de números enteros (0<N<20), la visualice apropiadamente 
-por pantalla (formato matricial) y muestre el elemento mayor y el elemento menor de dicha matriz y sus posiciones.  */
+/* Plantee e implemente un programa en  lenguaje C que permita introducir 
+apropiadamente una matriz NxN de números enteros (0<N<20), la visualice 
+apropiadamente por pantalla (formato matricial) y muestre el elemento mayor 
+y el elemento menor de dicha matriz y sus posiciones. */
 #include<stdio.h>
 #include<stdlib.h>
 #include<limits.h>
@@ -21,7 +23,8 @@ int pedirN(const char *mensaje, int limInf, int limSup) {
 void rellenarMatriz(int matriz[][TAM], int filas, int columnas) {
     int j, num;
 
-    printf("\nIntroduce la matriz fila por fila, %d elementos, pulsando <enter>:\n", columnas);
+    printf("\nIntroduce la matriz fila por fila, %d elementos, pulsando "
+            "<enter>:\n", columnas);
 
     for (int i = 0; i < filas; i++) {
         printf("%d: ", i+1);
@@ -77,8 +80,10 @@ void maxMin(int matriz[][TAM], int filas, int columnas) {
         }
     }
 
-    printf("\nEl elemento menor es %d y está en la posición [%d,%d].\n", min, mini, minj);
-    printf("\nEl elemento menor es %d y está en la posición [%d,%d].\n", max, maxi, maxj);
+    printf("\nEl elemento menor es %d y está en la posición [%d,%d].\n",
+             min, mini, minj);
+    printf("\nEl elemento menor es %d y está en la posición [%d,%d].\n",
+             max, maxi, maxj);
 }
 
 int main() {

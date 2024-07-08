@@ -1,6 +1,9 @@
-/* Plantee e implemente un programa en lenguaje C que, partiendo de la estructura creada en el ejercicio anterior, cree un sistema para almacenar las temperaturas 
-(en ºC) registradas en una ciudad durante una semana (hora a hora cada día) Introduzca las temperaturas solicitando los datos apropiadamente al usuario. Calcule y 
-muestre por pantalla las temperaturas medias diarias, las temperaturas medias de cada hora y la temperatura media semanal. */
+/* Plantee e implemente un programa en lenguaje C que, partiendo de la estructura
+ creada en el ejercicio anterior, cree un sistema para almacenar las temperaturas 
+(en ºC) registradas en una ciudad durante una semana (hora a hora cada día) 
+Introduzca las temperaturas solicitando los datos apropiadamente al usuario. 
+Calcule y muestre por pantalla las temperaturas medias diarias, las temperaturas
+ medias de cada hora y la temperatura media semanal. */
 #include<stdio.h>
 #include<limits.h>
 
@@ -63,16 +66,19 @@ void tempDia() {
         printf("\nDía %d\n", i+1);
         printHoras(temps[i], HORAS);
         // Temperatura media
-        printf("La temperatura media ha sido %.2fº C\n", mediaV(temps[i], HORAS));
+        printf("La temperatura media ha sido %.2fº C\n", 
+                mediaV(temps[i], HORAS));
     }
 
     for (int i = 0; i < HORAS; i++) {
         // Media de cada hora
-        printf("La temperatura media de las %d:00 ha sido %.2fº C\n", i, mediaHoras(temps, i, DIAS));
+        printf("La temperatura media de las %d:00 ha sido %.2fº C\n",
+                i, mediaHoras(temps, i, DIAS));
     }
     
     // Media semanal
-    printf("\nLa temperatura media de la semana ha sido %.2fº C\n", mediaMatriz(temps, DIAS, HORAS));
+    printf("\nLa temperatura media de la semana ha sido %.2fº C\n",
+             mediaMatriz(temps, DIAS, HORAS));
 }
 
 int main() {

@@ -1,6 +1,8 @@
-/* Plantee e implemente un programa en lenguaje C que permita almacenar en memoria el nombre y las notas de una asignatura de una clase de 15 alumnos. Muestre 
-por pantalla el nombre y nota de los alumnos que han obtenido la peor y la mejor calificación. Además muestre a continuación el listado con el nombre y nota de 
-todos los alumnos. */
+/* Plantee e implemente un programa en lenguaje C que permita almacenar en 
+memoria el nombre y las notas de una asignatura de una clase de 15 alumnos. 
+Muestre por pantalla el nombre y nota de los alumnos que han obtenido la peor y 
+la mejor calificación. Además muestre a continuación el listado con el nombre y 
+nota de todos los alumnos. */
 #include<stdio.h>
 #include<limits.h>
 
@@ -68,8 +70,10 @@ void imprimirDatos(lista alumnos, int n) {
     int iMax = indiceMax(alumnos, n);
     int iMin = indiceMin(alumnos, n);
 
-    printf("La mejor nota ha sido %.2f sacada por %s", alumnos[iMax].nota, alumnos[iMax].nombre);
-    printf("La peor nota ha sido %.2f sacada por %s", alumnos[iMin].nota, alumnos[iMin].nombre);
+    printf("La mejor nota ha sido %.2f sacada por %s",
+             alumnos[iMax].nota, alumnos[iMax].nombre);
+    printf("La peor nota ha sido %.2f sacada por %s", 
+            alumnos[iMin].nota, alumnos[iMin].nombre);
     printf("\nNotas de clase:\n");
     for (int i = 0; i < n; i++) {
         printf("%2d: %5.2f <---- %s", i+1, alumnos[i].nota, alumnos[i].nombre);

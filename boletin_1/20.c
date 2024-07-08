@@ -1,7 +1,10 @@
-/* Plantee e implemente un programa en Lenguaje C que solicite a un usuario su nombre, apellidos, edad y el número de créditos matriculados  en primera, segunda 
-y tercera matrícula. A continuación, debe mostrar una tabla como la que se indica donde se recoja el coste total de las asignaturas de primera, segunda y tercera 
-matrícula. Suponga que el precio del crédito en primera matrícula (15.45€) se incrementa un 25% en segunda matrícula y un 50% en tercera. Incluya también el coste 
-total de la matrícula del alumno. Ej de ejecución:
+/* Plantee e implemente un programa en Lenguaje C que solicite a un usuario su 
+nombre, apellidos, edad y el número de créditos matriculados  en primera, 
+segunda y tercera matrícula. A continuación, debe mostrar una tabla como la que 
+se indica donde se recoja el coste total de las asignaturas de primera, segunda 
+y tercera matrícula. Suponga que el precio del crédito en primera matrícula 
+(15.45€) se incrementa un 25% en segunda matrícula y un 50% en tercera. Incluya 
+también el coste total de la matrícula del alumno. Ej de ejecución:
 
 Nombre: Álvaro 
 Apellido: Pérez 
@@ -18,7 +21,6 @@ Créditos M1   Coste M1   Créditos M2    Coste M2   Créditos M3  Coste M3
                                                    Coste Total Matrícula 
                                                                  737.74€ 
 ************************************************************************  */
-
 #include<stdio.h>
 
 #define ISEGUNDA 0.25   // incremento segunda matrícula
@@ -52,7 +54,8 @@ int main() {
 
     // Salida
     printf("************************************************************************\n");
-    printf("*******                  %s %s: %d años                   *******\n", nombre, apellido, edad);
+    printf("*******                  %s %s: %d años                   *******\n",
+           nombre, apellido, edad);
     printf("Préditos M1   Coste M1   Créditos M2    Coste M2   Créditos M3  Coste M3\n");
     printf("%11d%11d%14d%12.2f%14.2f%10.2f\n", c1, c2, c3, c1Precio, c2Precio, c3Precio);
     printf("*******                                                          *******\n");

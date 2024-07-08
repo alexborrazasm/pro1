@@ -1,5 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla el mayor de tres números introducidos por teclado. */
-
+/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla el 
+mayor de tres números introducidos por teclado. */
 #include<stdio.h>
 
 main() {

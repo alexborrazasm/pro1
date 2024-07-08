@@ -1,5 +1,5 @@
-/* Plantee  e  implemente  un  programa  en  Lenguaje  C  que  solicite  un  número entero por teclado y muestre por pantalla si es positivo o negativo. */
-
+/* Plantee e implemente un programa en Lenguaje C que solicite un número entero 
+por teclado y muestre por pantalla si es positivo o negativo. */
 #include<stdio.h>
 
 int main() {

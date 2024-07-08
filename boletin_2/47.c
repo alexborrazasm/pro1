@@ -1,5 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C para obtener las primeras n filas del triángulo de Floyd. 
-*/
+/* Plantee e implemente un programa en Lenguaje C para obtener las primeras n 
+filas del triángulo de Floyd. */
 #include <stdio.h>
 
 int main() {

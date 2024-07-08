@@ -1,6 +1,7 @@
-/* Plantee e implemente un programa en Lenguaje C para calcular la media de cuatro puntuaciones de un estudiante de un curso de 
-informática (representadas por  4  enteros  entre  0  y  100)  introducidas  por  teclado.  Debe  incluir obligatoriamente los 
-siguientes elementos: */
+/* Plantee e implemente un programa en Lenguaje C para calcular la media de 
+cuatro puntuaciones de un estudiante de un curso de informática (representadas 
+por 4 enteros entre 0 y 100) introducidas por teclado. Debe incluir 
+obligatoriamente los siguientes elementos: */
 #include<stdio.h>
 
 #define NUMNOTAS 4
@@ -13,7 +14,8 @@ int pedirN(const char *string) {
     // Pide un entero
 }
 
-/* Procedimiento pedirNota: solicita un entero por teclado entre 0 y 100, si no es correcto lo sigue pidiendo hasta que lo sea.  */
+/* Procedimiento pedirNota: solicita un entero por teclado entre 0 y 100, 
+si no es correcto lo sigue pidiendo hasta que lo sea.  */
 void pedirNota(int *n) {
     do {
         *n = pedirN("Introduzca la nota");
@@ -23,7 +25,8 @@ void pedirNota(int *n) {
     } while (*n < 0 || *n > 100);
 }
 
-/* Función calculaPuntuacion: recibe un real y devuelve la letra de la nota media en función a la siguiente tabla.
+/* Función calculaPuntuacion: recibe un real y devuelve la letra de la nota 
+media en función a la siguiente tabla.
 Media Puntuación 
 [90, 100]  A 
 [80, 90]   B 
@@ -45,8 +48,9 @@ char calcularPuntuacion(float n) {
     }
 }
 
-/* Procedimiento que solicita al usuario cuatro notas (usando pedirNota) y calcula la media aritmética de las mismas, llamando 
-además a calculaPuntuacion para obtener la letra de la puntuación que luego se debe mostrar en pantalla.  */
+/* Procedimiento que solicita al usuario cuatro notas (usando pedirNota) y 
+calcula la media aritmética de las mismas, llamando además a calculaPuntuacion 
+para obtener la letra de la puntuación que luego se debe mostrar en pantalla. */
 void solicitarNotas() {
     int array[NUMNOTAS];
     float acc = 0, media;

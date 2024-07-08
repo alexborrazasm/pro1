@@ -48,7 +48,7 @@ tComplejo multiplicacion(tComplejo n1, tComplejo n2) { // Multiplicación de com
     return resultado;
 }
 
-tComplejo pedirComplejoB(char *mensaje) {   // Introducir complejos en forma binómica por teclado 
+tComplejo pedirComplejoB(char *mensaje) { 
     tComplejo n;
     
     printf("%s, formato (a bi)\n-> ", mensaje);
@@ -94,7 +94,8 @@ void printMenu() {
     printf("\n\t\tMENU:\n\n"
            "Opciones:\n\n"
            "1.- Introducir dos números complejos en forma binómica por teclado.\n"
-           "2.- Introducir dos números complejos en forma módulo-argumental por teclado.\n"
+           "2.- Introducir dos números complejos en forma módulo-argumental por"
+              " teclado.\n"
            "3.- Sumar dos números complejos.\n"
            "4.- Restar dos números complejos.\n" 
            "5.- Multiplicar dos números complejos.\n" 

@@ -1,5 +1,7 @@
-/* Plantee e implemente una función en Lenguaje C que reciba un valor que representa un mes y devuelva el siguiente mes, 
-utilizando para ello la siguiente interface:  
+/* Plantee e implemente una función en Lenguaje C que reciba un valor que 
+representa un mes y devuelva el siguiente mes, utilizando para ello la siguiente
+ interface:  
+
 MesSiguiente(mes:integer): integer; */
 
 #include <stdio.h>

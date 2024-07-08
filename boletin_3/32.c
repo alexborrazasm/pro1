@@ -1,5 +1,6 @@
-/* Plantee e implemente una función recursiva en Lenguaje C para determinar el término N de la sucesión de Fibonacci. Además de la 
-función, implemente otra función  apropiada para probar su funcionamiento. */
+/* Plantee e implemente una función recursiva en Lenguaje C para determinar el 
+término N de la sucesión de Fibonacci. Además de la función, implemente otra 
+función  apropiada para probar su funcionamiento. */
 #include<stdio.h>
 
 int pedirN(const char *string) {
@@ -20,7 +21,8 @@ int fib(int n) { /* Prometo no pasar número negativos */
 }
 
 void test() {
-    int n = pedirN("Programa que calcula un término de la sucesión de fibonacci\nDime un número");
+    int n = pedirN("Programa que calcula un término de la sucesión de fibonacci"
+                    "\nDime un número");
     printf("El resultado es: %d\n", fib(n));
 }
 

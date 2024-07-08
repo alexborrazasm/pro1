@@ -1,5 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C que sume los primeros 100 números enteros pares por una parte y los impares por otra. */
-
+/* Plantee e implemente un programa en Lenguaje C que sume los primeros 100 
+números enteros pares por una parte y los impares por otra. */
 #include<stdio.h>
 
 int main() {

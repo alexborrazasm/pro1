@@ -1,6 +1,6 @@
-/* Plantee e implemente un programa en Lenguaje C que calcule la potencia N-ésima de un número entero introducido por el teclado para 
-valores no negativos de N. */
-
+/* Plantee e implemente un programa en Lenguaje C que calcule la potencia 
+N-ésima de un número entero introducido por el teclado para valores no negativos
+ de N. */
 #include<stdio.h>
 
 int main() {

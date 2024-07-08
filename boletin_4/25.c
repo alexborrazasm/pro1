@@ -1,5 +1,6 @@
-/* Plantee e implemente un programa en lenguaje C que lea una frase de teclado (secuencia de caracteres hasta fin de línea), y determine la frecuencia de aparición 
-de cada vocal respecto al total de caracteres de la frase. */
+/* Plantee e implemente un programa en lenguaje C que lea una frase de teclado 
+(secuencia de caracteres hasta fin de línea), y determine la frecuencia de 
+aparición de cada vocal respecto al total de caracteres de la frase. */
 #include<stdio.h>
 
 #define TAM 1000

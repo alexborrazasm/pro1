@@ -1,6 +1,6 @@
-/* Plantee e implemente un programa en Lenguaje C que solicite el precio de un producto (sin IVA) y proporcione por pantalla el importe total del producto 
-con IVA incluido. Suponga un IVA constante del 24% para todos los productos. */
-
+/* Plantee e implemente un programa en Lenguaje C que solicite el precio de un 
+producto (sin IVA) y proporcione por pantalla el importe total del producto con
+ IVA incluido. Suponga un IVA constante del 24% para todos los productos. */
 #include<stdio.h>
 
 #define IVA 0.24

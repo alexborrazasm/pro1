@@ -1,6 +1,6 @@
-/* Plantee e implemente un programa en Lenguaje C que acepte valores enteros como entrada (por teclado) y que muestre por pantalla la suma 
-de los valores introducidos. El programa terminará cuando el usuario introduzca un 0. */
-
+/* Plantee e implemente un programa en Lenguaje C que acepte valores enteros 
+como entrada (por teclado) y que muestre por pantalla la suma de los valores 
+introducidos. El programa terminará cuando el usuario introduzca un 0. */
 #include<stdio.h>
 
 int main() {
@@ -8,7 +8,8 @@ int main() {
 
     a = 0;
 
-    printf("A continuación introduzca los números enteros de los que desee calcular la suma separados por espacios: (0 para terminar)\n");
+    printf("A continuación introduzca los números enteros de los que desee "
+           "calcular la suma separados por espacios: (0 para terminar)\n");
 
     do {
         scanf("%d", &n);

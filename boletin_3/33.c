@@ -1,6 +1,8 @@
-/* Plantee e implemente una función recursiva en Lenguaje C que calcule la suma de los términos de la sucesión de Fibonacci hasta 
-el término indicado por el usuario a través del teclado. Además de la función, implemente la función apropiada para probar su 
-funcionamiento, activando esta último  desde  el programa principal.  */
+/* Plantee e implemente una función recursiva en Lenguaje C que calcule la suma 
+de los términos de la sucesión de Fibonacci hasta el término indicado por el 
+usuario a través del teclado. Además de la función, implemente la función 
+apropiada para probar su funcionamiento, activando esta último  desde  el 
+programa principal.  */
 #include<stdio.h>
 
 int pedirN(const char *string) {
@@ -30,7 +32,8 @@ int fibto(int n) { /* fib hasta n, inluido */
 }
 
 void test() {
-    int n = pedirN("Programa que calcula la suma de la sucesión de fibonacci hasta un número\nDime el número");
+    int n = pedirN("Programa que calcula la suma de la sucesión de fibonacci "
+                    "hasta un número\nDime el número");
     printf("La suma es: %d\n", fibto(n));
 }
 

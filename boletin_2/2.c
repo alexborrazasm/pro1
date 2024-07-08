@@ -1,5 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C que solicite un número entero por teclado y muestre por pantalla si es par o impar. */
-
+/* Plantee e implemente un programa en Lenguaje C que solicite un número entero 
+por teclado y muestre por pantalla si es par o impar. */
 #include<stdio.h>
 
 int main() {

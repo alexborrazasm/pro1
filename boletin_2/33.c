@@ -1,5 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C que calcule el factorial de un número entero positivo introducido por teclado. */
-
+/* Plantee e implemente un programa en Lenguaje C que calcule el factorial de un
+ número entero positivo introducido por teclado. */
 #include<stdio.h>
 
 int main() {

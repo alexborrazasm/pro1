@@ -1,6 +1,7 @@
-/* Plantee e implemente un subprograma en Lenguaje C para mostrar por pantalla el triángulo de Floyd hasta un número entero 
-introducido por teclado. Además del  subprograma,  implemente  la  función  apropiada  para  probar  su 
-funcionamiento, activando este último desde el programa principal. */
+/* Plantee e implemente un subprograma en Lenguaje C para mostrar por pantalla 
+el triángulo de Floyd hasta un número entero introducido por teclado. Además del
+ subprograma, implemente la función apropiada para probar su funcionamiento, 
+ activando este último desde el programa principal. */
 #include<stdio.h>
 
 void trianguloFloyd(int n) {

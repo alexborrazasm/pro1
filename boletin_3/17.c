@@ -1,6 +1,7 @@
-/* Plantee e implemente una función en Lenguaje C que compruebe si un carácter está en mayúsculas o en minúsculas. Además de 
-la subrutina, implemente otra función para probar su funcionamiento,  tal  que  lea  un  carácter  de  teclado  e indique si 
-es una letra (mayúscula o minúscula). */
+/* Plantee e implemente una función en Lenguaje C que compruebe si un carácter 
+está en mayúsculas o en minúsculas. Además de la subrutina, implemente otra 
+función para probar su funcionamiento,  tal  que  lea  un  carácter  de  teclado
+ e indique si es una letra (mayúscula o minúscula). */
 #include<stdio.h>
 
 int mayusMinus(char c) { // 0 -> minúsculas | 1 -> mayúsculas

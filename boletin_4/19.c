@@ -1,4 +1,5 @@
-/* Plantee e implemente un programa en lenguaje C que rellene tres arrays con 500 elementos enteros de forma aleatoria y posteriormente muestre por pantalla 
+/* Plantee e implemente un programa en lenguaje C que rellene tres arrays con 
+500 elementos enteros de forma aleatoria y posteriormente muestre por pantalla 
 todos los números conseguidos de forma ordenada de menor a mayor. */
 #include<stdio.h>
 #include<stdlib.h>

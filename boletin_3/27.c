@@ -1,5 +1,6 @@
-/* Plantee e implemente una función recursiva en Lenguaje C para invertir un número entero. Además de la función, implemente la 
-función apropiada para probar su funcionamiento, activando este último desde el programa principal.  */
+/* Plantee e implemente una función recursiva en Lenguaje C para invertir un 
+número entero. Además de la función, implemente la función apropiada para probar
+ su funcionamiento, activando este último desde el programa principal. */
 #include<stdio.h>
 
 int pedirN(const char *string) {

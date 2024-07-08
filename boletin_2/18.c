@@ -1,5 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C que adivine un número del 1 al 10 conociendo su paridad y el resto de dividirlo por cinco. */
-
+/* Plantee e implemente un programa en Lenguaje C que adivine un número del 1 al
+   10 conociendo su paridad y el resto de dividirlo por cinco. */
 #include<stdio.h>
 
 int entrada (const char *string, int r1, int r2) {
@@ -9,7 +9,8 @@ int entrada (const char *string, int r1, int r2) {
     // Comprobación de entrada
     if (n < r1 || r2 < n ) {
         printf("Error, fuera de rango\n");
-        return entrada(string, r1, r2);  // Si la entrada no está en el rango, vuelve a pedirla
+        return entrada(string, r1, r2);  
+        // Si la entrada no está en el rango, vuelve a pedirla
     }
     return n;
 }
@@ -19,7 +20,9 @@ int main() {
 
     printf("Piense un número del 1 al 10...\n");
     par = entrada("¿El número que ha pensado es impar (1) o par (2)? ", 1, 2 );
-    resto = entrada("¿Cuál es el resto de dividir el número que ha pensado entre 5? ", 0, 4);
+    resto = entrada(
+        "¿Cuál es el resto de dividir el número que ha pensado entre 5? ",
+         0, 4);
 
     if (par) {
         switch (resto) {

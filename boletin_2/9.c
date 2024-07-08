@@ -1,7 +1,8 @@
-/* Plantee e implemente un programa en Lenguaje C que implemente el algoritmo necesario para calcular la edad de una persona suponiendo que se le pide al usuario 
-que introduzca su fecha de nacimiento por teclado y a la salida muestra por pantalla su edad con respecto a la fecha actual. Tenga en cuenta el cumpleaños exacto 
-de la persona para realizar el cálculo. */
-
+/* Plantee e implemente un programa en Lenguaje C que implemente el algoritmo 
+necesario para calcular la edad de una persona suponiendo que se le pide al 
+usuario que introduzca su fecha de nacimiento por teclado y a la salida muestra 
+por pantalla su edad con respecto a la fecha actual. Tenga en cuenta el 
+cumpleaños exacto de la persona para realizar el cálculo. */
 #include<stdio.h>
 #include<time.h>
 
@@ -39,11 +40,13 @@ int main() {
     case 1:
         switch (año < añoActual) {
         case 0:
-            printf("Tienes %d meses y %d días\n", mesActual - mes, diaActual - dia);
+            printf("Tienes %d meses y %d días\n",
+                     mesActual - mes, diaActual - dia);
             break;
         
         case 1:
-            printf("Tienes %d años, %d meses y %d días\n", añoActual - año, mesActual - mes, diaActual - dia);
+            printf("Tienes %d años, %d meses y %d días\n",
+                     añoActual - año, mesActual - mes, diaActual - dia);
             break;
         }
         break;

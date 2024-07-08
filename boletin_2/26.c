@@ -1,7 +1,7 @@
-/* Plantee e implemente un programa en Lenguaje C que  muestre  por pantalla la tabla de multiplicar (0-10) de un número entero positivo 
-introducido  por  el teclado. Muestre la salida en un formato similar al indicado en el ejercicio anterior.
-*/
-
+/* Plantee e implemente un programa en Lenguaje C que  muestre  por pantalla la 
+tabla de multiplicar (0-10) de un número entero positivo introducido  por  el 
+teclado. Muestre la salida en un formato similar al indicado en el ejercicio 
+anterior. */
 #include<stdio.h>
 
 main() {

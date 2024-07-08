@@ -1,20 +1,23 @@
-/* Plantee e implemente un programa en Lenguaje C de forma que solicite un carácter y que, dependiendo del carácter introducido, muestre por pantalla lo indicado y a 
-continuación vuelva a mostrar el menú: 
+/* Plantee e implemente un programa en Lenguaje C de forma que solicite un 
+carácter y que, dependiendo del carácter introducido, muestre por pantalla lo 
+indicado y a  continuación vuelva a mostrar el menú: 
 i)   “Ahora dibujaría un rectángulo”, si se ha tecleado una R 
 ii)  “Ahora dibujaría un cuadrado”, si se ha tecleado una C 
 iii) “Ahora dibujaría un pentágono” si se ha tecleado una P 
-iv)  “Ahora acabo el programa” si se ha tecleado una A 
-*/
+iv)  “Ahora acabo el programa” si se ha tecleado una A  */
 #include <stdio.h>
 
 int main() {
     char c;
 
     while (1) {
-        printf("Menu:\ni)   “Ahora dibujaría un rectángulo”, si se ha tecleado una R\n");
-        printf("ii)  “Ahora dibujaría un cuadrado”, si se ha tecleado una C\n");
-        printf("iii) “Ahora dibujaría un pentágono” si se ha tecleado una P\n");
-        printf("iv)  “Ahora acabo el programa” si se ha tecleado una A\nTecla: ");
+        printf("Menu:\n"
+               "i)   “Ahora dibujaría un rectángulo”, si se ha tecleado una R\n"
+               "ii)  “Ahora dibujaría un cuadrado”, si se ha tecleado una C\n"
+               "iii) “Ahora dibujaría un pentágono” si se ha tecleado una P\n"
+               "iv)  “Ahora acabo el programa” si se ha tecleado una A\n"
+                "Tecla: ");
+
         c = getchar();
         switch (c) {
             case 'R':
@@ -33,6 +36,7 @@ int main() {
                 printf("Error, opción no válida vudlva a intentarlo\n");
                 break;
         }
-        while (getchar() != '\n') {} // Leer y descartar caracteres adicionales en el búfer
+        while (getchar() != '\n') {} 
+        // Leer y descartar caracteres adicionales en el búfer
     }
 }

@@ -1,5 +1,6 @@
-/* Plantee e implemente una función recursiva en Lenguaje C para determinar si un número natural es capicúa. Además, implemente 
-otra función apropiada para probar su funcionamiento, activando esta última desde el programa principal. */
+/* Plantee e implemente una función recursiva en Lenguaje C para determinar si 
+un número natural es capicúa. Además, implemente otra función apropiada para 
+probar su funcionamiento, activando esta última desde el programa principal. */
 #include<stdio.h>
 
 int invInt(int n, int resultado) { // resultado = 0

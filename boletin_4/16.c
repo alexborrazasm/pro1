@@ -1,5 +1,7 @@
-/* Plantee e implemente un programa en lenguaje C que permita introducir un cuadrado (NxN) por teclado y determine si es mágico. Un cuadrado mágico es una 
-matriz NxN de números enteros del 1 al  N^2 en la que la suma de sus filas, sus columnas y sus diagonales principales coincide. */
+/* Plantee e implemente un programa en lenguaje C que permita introducir un 
+cuadrado (NxN) por teclado y determine si es mágico. Un cuadrado mágico es una 
+matriz NxN de números enteros del 1 al  N^2 en la que la suma de sus filas, sus 
+columnas y sus diagonales principales coincide. */
 #include<stdio.h>
 #include<stdlib.h>
 #include <stdbool.h>

@@ -1,5 +1,7 @@
-/* Plantee e implemente un subprograma en Lenguaje C que indique si un número entero es o no un número primo. Además del 
-subprograma, implemente la función apropiada para probar su funcionamiento, activando esta última desde el programa principal. */
+/* Plantee e implemente un subprograma en Lenguaje C que indique si un número 
+entero es o no un número primo. Además del subprograma, implemente la función 
+apropiada para probar su funcionamiento, activando esta última desde el programa
+ principal. */
 #include<stdio.h>
 
 int pedirN(const char *string) {
@@ -16,8 +18,10 @@ int esPrimo(int numero) {
     }
 
     for (int i = 2; i * i <= numero; i++) {
+        // Si el número es divisible por algún otro número, no es primo
         if (numero % i == 0) {
-            return 0;  // Si el número es divisible por algún otro número, no es primo
+            return 0;
+            
         }
     }
     return 1;  // Si no se encontraron divisores, el número es primo

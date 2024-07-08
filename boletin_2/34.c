@@ -1,4 +1,5 @@
-/* Plantee e implemente en Lenguaje C el programa Fibonacci, de forma que lea un valor N > 0 y muestre el valor del término N de dicha sucesión. */
+/* Plantee e implemente en Lenguaje C el programa Fibonacci, de forma que lea un
+ valor N > 0 y muestre el valor del término N de dicha sucesión. */
 
 int fibonacci(int n) {
     int resultado;
@@ -19,5 +20,6 @@ int main() {
     fib = fibonacci(n);
 
     printf("El termino %d de Fibonacci es %d\n", n, fib);
+    
     return 0;
 }

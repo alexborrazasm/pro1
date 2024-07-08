@@ -1,6 +1,6 @@
-/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla una lista de los años bisiestos en el siglo XIX, espere a que el 
-usuario pulse una tecla y muestre los correspondientes al siglo XX. */
-
+/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla una 
+lista de los años bisiestos en el siglo XIX, espere a que el usuario pulse una
+ tecla y muestre los correspondientes al siglo XX. */
 #include<stdio.h>
 
 int main() {

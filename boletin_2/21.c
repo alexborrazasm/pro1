@@ -1,15 +1,18 @@
-/* Plantee e implemente un programa en Lenguaje C que calcule la nota media de las 6 asignaturas de un curso académico a partir de las calificaciones 
-introducidas  individualmente  por  teclado.  Debe  mostrar  la  calificación  media también en formato SOBRESALIENTE (9-10), NOTABLE (7-8.9), 
-APROBADO (5-6.9),  SUSPENSO  (0-4.9).  En  el  caso  de  que  el  alumno  no  se haya presentado a alguna de las asignaturas, el usuario debe 
-introducir 0 como calificación.  En  este  último  caso  añada  además  en  la  salida  la  nota  media obtenida en las asignaturas a las que 
-se ha presentado. */
-
+/* Plantee e implemente un programa en Lenguaje C que calcule la nota media de 
+las 6 asignaturas de un curso académico a partir de las calificaciones 
+introducidas individualmente por teclado. Debe mostrar la calificación media 
+también en formato SOBRESALIENTE (9-10), NOTABLE (7-8.9), APROBADO (5-6.9), 
+SUSPENSO (0-4.9). En el caso de que el alumno no se haya presentado a alguna de 
+las asignaturas, el usuario debe introducir 0 como calificación. En este último 
+caso añada además en la salida la nota media obtenida en las asignaturas a las 
+que se ha presentado. */
 #include<stdio.h>
-#include <string.h>
+#include<string.h>
 
 float entradaFloat (int n) {
     float m;
-    printf("Introduzca calificación asignatura %d (formato X.X, 0 para No Presentado): ", n);
+    printf("Introduzca calificación asignatura %d (formato X.X, 0 para No"
+    " Presentado): ", n);
     scanf("%f", &m);
     if (m < 0 || 10 < m ) {
         printf("Error, fuera de rango.\n");
@@ -49,7 +52,8 @@ int main() {
     if (np != 0) {
         notaMedia = nota / (6 - np);
         calcularRangoNota(rNota, notaMedia);
-        printf("Nota media asignaturas presentadas: %s %.2f\n", rNota, notaMedia);
+        printf("Nota media asignaturas presentadas: %s %.2f\n",
+                rNota, notaMedia);
     }
 
     return 0;

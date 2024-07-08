@@ -1,6 +1,8 @@
-/* Plantee e implemente un programa en lenguaje C que permita introducir apropiadamente una matriz NxN de enteros y que, a petición del usuario, intercambie las 
-filas o columnas i y j de dicha matriz. Muestre por pantalla en formato matricial tanto la matriz original introducida como la matriz resultante del intercambio 
-de filas o columnas solicitado por el usuario. */
+/* Plantee e implemente un programa en lenguaje C que permita introducir 
+apropiadamente una matriz NxN de enteros y que, a petición del usuario, 
+intercambie las filas o columnas i y j de dicha matriz. Muestre por pantalla en 
+formato matricial tanto la matriz original introducida como la matriz resultante
+ del intercambio de filas o columnas solicitado por el usuario. */
 #include<stdio.h>
 #include<stdlib.h>
 #include<limits.h>
@@ -23,7 +25,8 @@ int pedirN(const char *mensaje, int limInf, int limSup) {
 void rellenarMatriz(int matriz[][TAM], int filas, int columnas) {
     int j, num;
 
-    printf("\nIntroduce la matriz fila por fila, %d elementos, pulsando <enter>:\n", columnas);
+    printf("\nIntroduce la matriz fila por fila, %d elementos, pulsando "
+            "<enter>:\n", columnas);
 
     for (int i = 0; i < filas; i++) {
         printf("%d: ", i+1);
@@ -42,7 +45,8 @@ void rellenarMatriz(int matriz[][TAM], int filas, int columnas) {
     }
 }
 
-void imprimirMatriz(const char *mensaje,int matriz[][TAM], int filas, int columnas) {
+void imprimirMatriz(const char *mensaje,int matriz[][TAM], int filas, 
+                    int columnas) {
     printf("\n%s:\n\n", mensaje);
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
@@ -92,7 +96,8 @@ int main() {
 
     if (siNo("Quieres cambiar filas por columnas")) {
         invMatriz(matriz, matrizInv, filas, columnas);
-        imprimirMatriz("La matriz cambiando filas por columnas es",matrizInv, filas, columnas);
+        imprimirMatriz("La matriz cambiando filas por columnas es",
+                         matrizInv, filas, columnas);
     }
 
     printf("\nFIN DEL PROGRAMA\n\n");

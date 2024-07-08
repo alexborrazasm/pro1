@@ -1,6 +1,7 @@
-/* Plantee e implemente un programa en Lenguaje C que reciba números enteros por teclado y al terminar indique cuánto vale la suma de los 
-números pares y los impares  por  separado.  La  entrada  de  números  terminará  cuando  se  introduzca un cero. */
-
+/* Plantee e implemente un programa en Lenguaje C que reciba números enteros por
+ teclado y al terminar indique cuánto vale la suma de los números pares y los 
+ impares por separado. La entrada de números terminará cuando se introduzca un 
+ cero. */
 #include<stdio.h>
 
 int main() {
@@ -8,7 +9,8 @@ int main() {
     int pares = 0;
     int impares = 0;
 
-    printf("A continuación introduzca los números enteros de los que desee calcular la suma separados por espacios: (0 para terminar)\n");
+    printf("A continuación introduzca los números enteros de los que desee "
+            "calcular la suma separados por espacios: (0 para terminar)\n");
 
     while(1) {
         scanf("%d", & num);

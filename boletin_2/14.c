@@ -1,10 +1,10 @@
-/* Plantee e implemente un programa en Lenguaje C que solicite por teclado dos números enteros positivos (el primero de 3 cifras y el segundo de 1) 
-y que muestre por pantalla su multiplicación.
-Debe comprobar que el primer número tiene efectivamente 3 cifras y es positivo, y que el segundo número es también positivo y tiene una
-única cifra. 
-En caso de que no se cumplan estas condiciones, el programa debe alertar al usuario con un mensaje apropiado Ej:
-“El primer número no tiene 3 cifras!!!” */
-
+/* Plantee e implemente un programa en Lenguaje C que solicite por teclado dos 
+números enteros positivos (el primero de 3 cifras y el segundo de 1) y que 
+muestre por pantalla su multiplicación.
+Debe comprobar que el primer número tiene efectivamente 3 cifras y es positivo, 
+y que el segundo número es también positivo y tiene una única cifra. 
+En caso de que no se cumplan estas condiciones, el programa debe alertar al 
+usuario con un mensaje apropiado Ej: “El primer número no tiene 3 cifras!!!” */
 #include<stdio.h>
 
 int pedirInt(const char *mensaje) {

@@ -1,4 +1,5 @@
-/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla una tabla indicando el radio, el perímetro y el área de tres círculos cuyo radio es
+/* Plantee e implemente un programa en Lenguaje C que muestre por pantalla una 
+tabla indicando el radio, el perímetro y el área de tres círculos cuyo radio es
 solicitado por teclado. La salida en pantalla debe tener el siguiente formato:
 
    RADIO    PERIMETRO   AREA
@@ -6,9 +7,8 @@ solicitado por teclado. La salida en pantalla debe tener el siguiente formato:
     2        12.56      12.56
     3        18.86      28.27
     4        25.13      50.26 */
-
 #include<stdio.h>
-#include <math.h>
+#include<math.h>
 
 int main() {
     int radio1, radio2, radio3;

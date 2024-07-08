@@ -1,17 +1,19 @@
-/*  Plantee e implemente un programa en Lenguaje C de generación de quinielas de forma aleatoria. El programa deberá mostrar en pantalla tantas 
-quinielas como desee el usuario; se considera que todos los resultados son igualmente probables. El número máximo de quinielas generables 
-simultáneamente es de 10. Las quinielas se mostrarán en pantalla del modo habitual, esto es, ordenadas por filas (partidos) y columnas (resultados). 
+/*  Plantee e implemente un programa en Lenguaje C de generación de quinielas de
+forma aleatoria. El programa deberá mostrar en pantalla tantas quinielas como 
+desee el usuario; se considera que todos los resultados son igualmente probables.
+El número máximo de quinielas generables simultáneamente es de 10. Las quinielas
+se mostrarán en pantalla del modo habitual, esto es, ordenadas por filas (partidos)
+ y columnas (resultados). 
 Las  opciones  del  programa  serán: 
 I)ndicar número de quinielas
 M)ostrar quinielas
 S)alir.  
-No se podrán mostrar las quinielas sin haber indicado previamente el número de quinielas deseado. 
+No se podrán mostrar las quinielas sin haber indicado previamente el número de 
+quinielas deseado. 
 
-Las opciones de la quiniela son equipo local ganará (1), si habrá un empate (X), o si el equipo visitante ganará (2)
-filas (partidos) y columnas (resultados)
-15 partidos
-*/
-
+Las opciones de la quiniela son equipo local ganará (1), si habrá un empate (X),
+ o si el equipo visitante ganará (2)filas (partidos) y columnas (resultados) 15 
+ partidos */
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -25,12 +27,12 @@ void menu() {       // Función que imprime las opciones de un menú
     printf("S)alir\n");
 }
 
-void askInt(const char *mensaje, int *n) {      // Función que pide por teclado un entero
+void askInt(const char *mensaje, int *n) {  
     printf("%s", mensaje);
     scanf("%d", n);
-}
+}  // Función que pide por teclado un entero
 
-char resultadoQ() {     // Función que nos da el resultado de la quiniela 1, x o 2
+char resultadoQ() {     
     int n = rand() % 3;
     char salida;
     if (n == 1)
@@ -40,7 +42,7 @@ char resultadoQ() {     // Función que nos da el resultado de la quiniela 1, x 
     else
         salida = 'X';
     return salida;
-}
+}  // Función que nos da el resultado de la quiniela 1, x o 2
 
 void generarQ(int nQuinielas) {     // Función que rellena quinienas
     printf("%13c", ' ');
@@ -65,8 +67,11 @@ void generarQ(int nQuinielas) {     // Función que rellena quinienas
 int main() {
     int nQ = 0;
 
-    srand(time(NULL)); // Inicializamos la semilla con la hora del sistema para general enteros pseudo-aleatorios
+    /* Inicializamos la semilla con la hora del sistema para general enteros 
+    pseudo-aleatorios */
 
+    srand(time(NULL)); 
+    
     while (1) {
         menu();
         printf("Opción: ");

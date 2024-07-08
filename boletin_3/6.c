@@ -1,7 +1,8 @@
-/* Plantee e implemente un subprograma en Lenguaje C para mostrar por pantalla N filas del triángulo de Floyd. Incluya la función 
-para obtener del usuario un número  de  filas  correcto  (N>0).  Además  del  subprograma,  implemente  la función apropiada para 
-probar su funcionamiento, activando este último desde 
-el programa principal. */
+/* Plantee e implemente un subprograma en Lenguaje C para mostrar por pantalla N
+ filas del triángulo de Floyd. Incluya la función para obtener del usuario un 
+ número de filas correcto (N>0). Además del subprograma, implemente la función 
+ apropiada para probar su funcionamiento, activando este último desde el 
+ programa principal. */
 #include<stdio.h>
 
 void trianguloFloyd(int n) {

@@ -1,4 +1,5 @@
-/* Implemente un programa en lenguaje C que tras leer un texto, indique el nÃºmero de palabras que tienen un minino de tres vocales diferentes. */
+/* Implemente un programa en lenguaje C que tras leer un texto, indique el 
+nÃºmero de palabras que tienen un minino de tres vocales diferentes. */
 #include<stdio.h>
 #include<stdbool.h>
 
@@ -26,12 +27,14 @@ void analisisTexto(char *string) {
             }
             
             if (vocalCheck) {   // Si es una vocal
-                for (int n = 0; n < vocal; n++) {           // Comprueba que no esta en la lista de vocales de la palaba actual
+            // Comprueba que no esta en la lista de vocales de la palaba actual
+                for (int n = 0; n < vocal; n++) {           
                     if (string[i] == vocalesPasadas[n]) {
                         repCheck = false;
                     }
                 }
-                if (repCheck) {                             // Si no se repite, sumamos 1 a vocal y la añadirmos a la lista
+                // Si no se repite, sumamos 1 a vocal y la añadirmos a la lista
+                if (repCheck) {                             
                     vocalesPasadas[vocal] = string[i];                          
                     vocal++;
                 }

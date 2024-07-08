@@ -1,6 +1,9 @@
-/* Plantee e implemente un programa en lenguaje C que construya un array a partir de números enteros proporcionados por el usuario (máximo 20 elementos) y que 
-a continuación sustituya los números pares por su cuadrado y los números impares por la parte entera de la raíz cuadrada de su valor absoluto. Muestre por 
-pantalla tanto el array original como el resultante de las operaciones indicadas.  */
+/* Plantee e implemente un programa en lenguaje C que construya un array a partir
+ de números enteros proporcionados por el usuario (máximo 20 elementos) y que a 
+ continuación sustituya los números pares por su cuadrado y los números impares 
+ por la parte entera de la raíz cuadrada de su valor absoluto. Muestre por 
+ pantalla tanto el array original como el resultante de las operaciones indicadas.
+ */
 #include<stdio.h>
 #include<math.h>
 #include<stdlib.h>
@@ -11,7 +14,8 @@ int pedirArray(int array[], int n) {
     int i = 0;
     int num;
 
-    printf("Introduzca los elementos del array (máximo 20) separados por espacios, <enter> para terminar:\n");
+    printf("Introduzca los elementos del array (máximo 20) separados por "
+            "espacios, <enter> para terminar:\n");
 
     do {
         if (i >= n) {

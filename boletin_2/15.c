@@ -1,10 +1,10 @@
-/* Plantee e implemente un programa en Lenguaje C que presente el menú que se especifica a continuación y que, según sea el carácter introducido por el usuario, 
-escriba en pantalla BEBÉ, ADOLESCENTE, MUJER, HOMBRE.
+/* Plantee e implemente un programa en Lenguaje C que presente el menú que se 
+especifica a continuación y que, según sea el carácter introducido por el 
+usuario, escriba en pantalla BEBÉ, ADOLESCENTE, MUJER, HOMBRE.
 B.- Bebé
 A.- Adolescente
 M.- Mujer
 H.- Hombre */
-
 #include<stdio.h>
 
 int main() {

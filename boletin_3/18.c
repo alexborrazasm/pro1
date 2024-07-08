@@ -1,6 +1,7 @@
-/* Plantee e implemente una subrutina en Lenguaje C que, utilizando las funciones desarrolladas en los dos ejercicios anteriores, 
-lea una frase completa del teclado (terminada en ENTER) y muestre por pantalla el número de letras (mayúsculas y minúsculas) y 
-dígitos que incluye. */
+/* Plantee e implemente una subrutina en Lenguaje C que, utilizando las 
+funciones desarrolladas en los dos ejercicios anteriores, lea una frase completa
+ del teclado (terminada en ENTER) y muestre por pantalla el número de letras 
+ (mayúsculas y minúsculas) y dígitos que incluye. */
 #include<stdlib.h>
 #include<stdio.h>
 
@@ -44,7 +45,8 @@ void test() {
         }
         i++;
     }
-    printf("Su frase tiene:\n  Letras: %d mayúsculas y %d minúsculas\n  Dígitos: %d\n", mayus, minus, numero);
+    printf("Su frase tiene:\n  Letras: %d mayúsculas y %d minúsculas\n "
+           " Dígitos: %d\n", mayus, minus, numero);
 }
 
 int main(){

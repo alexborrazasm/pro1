@@ -1,6 +1,6 @@
-/* Plantee e implemente un subprograma en Lenguaje C para escribir N líneas en blanco por pantalla. Además del subprograma, 
-implemente  un  programa principal para probar su funcionamiento. */
-
+/* Plantee e implemente un subprograma en Lenguaje C para escribir N líneas en 
+blanco por pantalla. Además del subprograma, implemente  un  programa principal 
+para probar su funcionamiento. */
 #include<stdio.h>
 
 void imprimirBlanco(int n) {

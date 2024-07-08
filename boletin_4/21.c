@@ -1,5 +1,7 @@
-/* Diseñe la estructura de datos que permita almacenar en memoria la lista de tareas a realizar durante los días del año. Se debe de poder controlar la fecha, 
-la descripción de tareas a realizar cada día con su hora y minutos. Tenga en cuenta que cada día no podrá tener más de 20 tareas. */
+/* Diseñe la estructura de datos que permita almacenar en memoria la lista de 
+tareas a realizar durante los días del año. Se debe de poder controlar la fecha, 
+la descripción de tareas a realizar cada día con su hora y minutos. Tenga en 
+cuenta que cada día no podrá tener más de 20 tareas. */
 #include <stdio.h>
 
 #define TAM 100
@@ -39,7 +41,8 @@ void leerDatos (struct tarea t [][NTAREAS]){
         scanf ("%d/%d/%d", &t[i][0].dia, &t[i][0].mes, &t[i][0].anho);
 
         do {
-            printf ("Introduzca el numero de tareas para el dia %d/%d/%d (<=20): ",  t[i][0].dia, t[i][0].mes, t[i][0].anho);
+            printf ("Introduzca el numero de tareas para el dia %d/%d/%d (<=20): ",
+             t[i][0].dia, t[i][0].mes, t[i][0].anho);
             scanf ("%d", &numTareas);
         } while (numTareas <= 0 || numTareas > 20);
 
@@ -54,7 +57,8 @@ void leerDatos (struct tarea t [][NTAREAS]){
 
         i++;
 
-        printf ("\nDesea seguir introduciendo tareas para otros dias? (SI (1); NO (0)): ");
+        printf ("\nDesea seguir introduciendo tareas para otros dias? (SI (1);"
+                " NO (0)): ");
         scanf ("%d", &respuesta);
     }
 }

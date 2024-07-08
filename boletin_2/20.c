@@ -1,13 +1,13 @@
-/* Plantee e implemente un programa en Lenguaje C que solicite el nombre, el peso (en kilos) y la altura (en centímetros) de una persona por 
-teclado y que calcule su índice de masa corporal, IMC=peso_en_kilos/(altura_en_metros)^2, indicando  por  pantalla  si  la  persona  está  por 
-debajo de su peso  de salud: 
+/* Plantee e implemente un programa en Lenguaje C que solicite el nombre, el 
+peso (en kilos) y la altura (en centímetros) de una persona por teclado y que 
+calcule su índice de masa corporal, IMC=peso_en_kilos/(altura_en_metros)^2, 
+indicando  por  pantalla  si  la  persona  está  por debajo de su peso  de salud: 
 - Por debajo de su peso de salud (IMC<18.5)
 - Normal (18.5<=IMC<25)
 - Con sobrepeso de grado I (25<=IMC<27)
 - Sobrepeso de grado II (27<=IMC<30)
 - Obesa (IMC>=30). 
 */
-
 #include<stdio.h>
 
 int pedirFloat (const char *string) {
@@ -19,12 +19,12 @@ int pedirFloat (const char *string) {
 
 void pedirNombre(const char *string, char *nombre[], char *apellido[]) {
     printf("%s", string);
-    scanf("%s %s", nombre, apellido); // Cuando pasamos un array no tenemos que especifica &, dado que por defecto estamos pasando el
-                                      // puntero a primer valor de memoria del array
+    scanf("%s %s", nombre, apellido);
 }
 
 void salida(char name[], char surName[], float imc, const char *string) {
-    printf("%s %s, según el índice de masa corporal (IMC=%.2f), %s.\n", name, surName, imc, string);
+    printf("%s %s, según el índice de masa corporal (IMC=%.2f), %s.\n",
+            name, surName, imc, string);
 }
 
 int main() {
@@ -40,7 +40,8 @@ int main() {
     imc = (weight / h);
 
     if (imc < 18.5)
-        salida(name, surName, imc, "tiene usted un peso por debajo de su peso de salud para su estatura");
+        salida(name, surName, imc, 
+        "tiene usted un peso por debajo de su peso de salud para su estatura");
     else if (imc < 25)
         salida(name, surName, imc, "tiene usted un peso normal para su estatura");
     else if (imc < 27)

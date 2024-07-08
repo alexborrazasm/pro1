@@ -1,6 +1,7 @@
-/* Plantee e implemente una función recursiva en Lenguaje C que calcule y muestre la tabla de multiplicar de un número entero a 
-partir de dicho número y el máximo multiplicador. Además de la función, implemente la función apropiada para probar su 
-funcionamiento.  */
+/* Plantee e implemente una función recursiva en Lenguaje C que calcule y 
+muestre la tabla de multiplicar de un número entero a partir de dicho número y 
+el máximo multiplicador. Además de la función, implemente la función apropiada 
+para probar su funcionamiento.  */
 #include<stdio.h>
 
 int pedirN(const char *string) {
@@ -23,6 +24,7 @@ int tablaMultiplicar(int n, int acc) { // acc = 0
 }
 
 int main() {
-    tablaMultiplicar(pedirN("***Programa que calcula tablas de multiplicar***\nDime el número"), 0);
+    tablaMultiplicar(pedirN("***Programa que calcula tablas de multiplicar***\n"
+                            "Dime el número"), 0);
     return 0;
 }

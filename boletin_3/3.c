@@ -1,6 +1,6 @@
-/* Plantee e implemente un programa en lenguaje C, que utilizando exclusivamente subprogramas, calcule la suma de los elementos 
-de un array de números  reales  proporcionados  por  el  usuario,  considerando  como  máximo  30 elementos. */
-
+/* Plantee e implemente un programa en lenguaje C, que utilizando exclusivamente
+ subprogramas, calcule la suma de los elementos de un array de números reales 
+ proporcionados  por  el  usuario,  considerando  como  máximo  30 elementos. */
 #include<stdio.h>
 
 int pedirN(const char *mensaje, int n) {
